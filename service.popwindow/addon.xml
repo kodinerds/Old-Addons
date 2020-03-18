@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<addon id="service.popwindow" name="Display Popup" version="0.4.0" provider-name="L0RE">
+	<requires>
+		<import addon="xbmc.python" version="2.24.0"/>
+		<import addon="script.module.requests" version="2.9.1"/>
+	</requires>
+	<extension point="xbmc.service" library="service.py" start="login"/>
+	<extension point="xbmc.python.module" library="lib"/>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Show Popup-Messages from other Addons</summary>
+		<summary lang="de">Popup-Meldungen von anderen Addons anzeigen</summary>
+		<description lang="en">Display pop-up messages on the screen of KODI.[CR]Do not miss any important events while e.g. watch a video or listen to music !</description>
+		<description lang="de">Popup-Meldungen auf dem Bildschirm von KODI anzeigen.[CR]Verpasse keine wichtigen Ereignisse während Du z.B. ein Video schaust oder Musik hörst !</description>
+		<language></language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
+		<website></website>
+		<email>andreas at vogler dot name</email>
+		<source>https://github.com/kodinerds/repo/tree/master/service.popwindow</source>
+		<assets>
+			<icon>icon.png</icon>
+		</assets>
+		<news>[B][COLOR orangered]Version 0.4.0  (16.09.2018)[/COLOR][/B] by realvito[CR]
+- added: Fehlerzähler - damit der Service bei Fehlern nicht sofort abbricht
+- added: Standard-Logmeldungen - zur Kontrolle auf einwandfreie Funktion
+- optimized: Die Abstände zwischen Bildern und Text vergrössert, zur besseren Übersicht
+- forced: Standardcodierung = utf-8 wegen andauernden Encodingfehlern
+		</news>
+	</extension>
+</addon>

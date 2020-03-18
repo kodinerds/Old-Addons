@@ -1,0 +1,9 @@
+﻿0.1
+* Initial Release by L0RE
+...
+
+[B]Version 0.4.0  (16.09.2018)[/B] by realvito[CR]
+- added: Fehlerzähler - damit der Service bei Fehlern nicht sofort abbricht
+- added: Standard-Logmeldungen - zur Kontrolle auf einwandfreie Funktion
+- optimized: Die Abstände zwischen Bildern und Text vergrössert, zur besseren Übersicht
+- forced: Standardcodierung = utf-8 wegen andauernden Encodingfehlern
