@@ -1,0 +1,5 @@
+﻿15.12.2016   -initial release
+
+Version 0.2.0  (16.03.2020)
+- Dieses Projekt wird wegen zu geringer Nachfrage aufgelöst.
+- Updates für dieses Addon eingestellt !

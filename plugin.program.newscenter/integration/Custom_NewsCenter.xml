@@ -1,0 +1,3227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window type="window" id="4117">
+    <defaultcontrol always="true">19010</defaultcontrol>
+    <allowoverlay>false</allowoverlay>
+    <controls>
+        <include>CommonBackground</include>
+		<include>ContentPanelBackgrounds</include>
+		<control type="image">
+			<left>100</left>
+			<top>90</top>
+			<width>820</width>
+			<height>570</height>
+			<texture background="true">ContentPanel.png</texture>
+		</control>
+		<control type="image">
+			<left>930</left>
+			<top>90</top>
+			<width>250</width>
+			<height>570</height>
+			<texture background="true">ContentPanel.png</texture>
+		</control>
+		<control type="label">
+			<left>470</left>
+			<top>35</top>
+			<width>300</width>
+			<height>24</height>
+			<font>font28_title</font>
+			<label>[UPPERCASE]Newscenter[/UPPERCASE]</label>
+			<textcolor>white</textcolor>
+			<shadowcolor>black</shadowcolor>
+			<align>center</align>
+			<aligny>center</aligny>
+		</control>
+        <!-- =============================================================================================-->
+        <!-- ================================== HAUPT MENU ===============================================-->
+        <!-- =============================================================================================-->
+        <control type="list" id="19010">
+            <left>908</left>
+            <top>110</top>
+            <width>334</width>
+            <height>540</height>
+            <onright>1860</onright>
+            <onleft condition="Container(19010).Hasfocus(80101)">19111</onleft>
+			<onleft condition="Container(19010).Hasfocus(80102)">24010</onleft>
+			<onleft condition="Container(19010).Hasfocus(80103)">23010</onleft>
+			<onleft condition="Container(19010).Hasfocus(80104)">88435</onleft>
+			<onleft condition="Container(19010).Hasfocus(80105)">88432</onleft>	
+			<onleft condition="Container(19010).Hasfocus(80106)">88433</onleft>	
+			<onleft condition="Container(19010).Hasfocus(80107)">88434</onleft>	
+			<onleft condition="Container(19010).Hasfocus(80108)">24011</onleft>
+            <onup>19010</onup>
+            <ondown>19010</ondown>
+            <scrolltime tween="Quadratic" easing="out">500</scrolltime>
+            <focusposition>0</focusposition>
+            <orientation>vertical</orientation>
+            <movement>1</movement>
+            <itemlayout height="54" width="167">
+                <control type="group">
+                    <control type="image">
+                        <left>10</left>
+                        <top>17</top>
+                        <width>20</width>
+                        <height>20</height>
+                        <texture background="true">$INFO[ListItem.Property(MenuIcon)]</texture>
+                    </control>
+                    <control type="label">
+                        <left>47</left>
+                        <top>13</top>
+                        <width>200</width>
+                        <height>24</height>
+                        <font>font12_title</font>
+                        <label>$INFO[ListItem.Label]</label>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                    </control>
+                </control>
+            </itemlayout>
+            <focusedlayout height="54" width="167">
+                <control type="image">
+                    <left>24</left>
+                    <top>0</top>
+                    <width>246</width>
+                    <height>55</height>
+                    <texture background="true">button-focus.png</texture>
+					<visible>Control.Hasfocus(19010)</visible>
+                </control>
+                <control type="image">
+                    <left>10</left>
+                    <top>17</top>
+                    <width>20</width>
+                    <height>20</height>
+                    <texture background="true">$INFO[ListItem.Property(MenuIcon)]</texture>
+                </control>
+                <control type="label">
+                    <left>47</left>
+                    <top>13</top>
+                    <width>200</width>
+                    <height>24</height>
+                    <font>font12_title</font>
+                    <label>$INFO[ListItem.Label]</label>
+                    <textcolor>white</textcolor>
+                    <shadowcolor>black</shadowcolor>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                </control>
+            </focusedlayout>
+            <content>
+                <item id="80101">
+				  <label>$ADDON[plugin.program.newscenter  30112]</label>
+				  <onclick>RunScript(plugin.program.newscenter,?methode=show_select_dialog)</onclick>
+				  <property name="MenuIcon">home/homeicons/time2.png</property>
+				  <property name="MenuIcon_over">home/homeicons/time2.png</property>
+				</item>
+				<item id="80102">
+				  <label>$ADDON[plugin.program.newscenter  30113]</label>
+				  <onclick>-</onclick>
+				  <property name="MenuIcon">home/homeicons/news.png</property>
+				  <property name="MenuIcon_over">home/homeicons/news.png</property>
+				</item>
+				<item id="80108">
+				  <label>$ADDON[plugin.program.newscenter  30090]</label>
+				  <onclick>-</onclick>
+				  <property name="MenuIcon">home/homeicons/news.png</property>
+				  <property name="MenuIcon_over">home/homeicons/news.png</property>
+				</item>
+				<item id="80103">
+				  <label>$ADDON[plugin.program.newscenter  30111]</label>
+				  <onclick>-</onclick>
+				  <property name="MenuIcon">home/homeicons/football.png</property>
+				  <property name="MenuIcon_over">home/homeicons/football.png</property>
+				</item>
+				<item id="80104">
+				  <label>$ADDON[plugin.program.newscenter  30109]</label>
+				  <onclick>-</onclick>
+				  <property name="MenuIcon">home/homeicons/weather.png</property>
+				  <property name="MenuIcon_over">home/homeicons/weather.png</property>
+				</item>
+				<item id="80105">
+				  <label>$ADDON[plugin.program.newscenter  30093]</label>
+				  <onclick>-</onclick>
+				  <property name="MenuIcon">home/homeicons/weather.png</property>
+				  <property name="MenuIcon_over">home/homeicons/weather.png</property>
+				</item>
+				<item id="80106">
+				  <label>$ADDON[plugin.program.newscenter  30107]</label>
+				  <onclick>-</onclick>
+				  <property name="MenuIcon">home/homeicons/weather.png</property>
+				  <property name="MenuIcon_over">home/homeicons/weather.png</property>
+				  <visible>!StringCompare(Window(Home).Property(NewsCenter.Unwetter.Anzahl),0)</visible>
+				</item>
+				<item id="80107">
+				  <label>$ADDON[plugin.program.newscenter  30105]</label>
+				  <onclick>-</onclick>
+				  <property name="MenuIcon">home/homeicons/blume.png</property>
+				  <property name="MenuIcon_over">home/homeicons/blume.png</property>
+				</item>
+            </content>
+        </control>
+        <!-- =============================================================================================-->
+        <!-- ================================== VIDEO NEWS MENU ==========================================-->
+        <!-- =============================================================================================-->
+        <control type="panel" id="24010">
+            <visible>Container(19010).Hasfocus(80102)</visible>
+            <left>117</left>
+            <top>107</top>
+            <width>803</width>
+            <height>553</height>
+            <onright>19010</onright>
+            <onleft>1860</onleft>
+            <onup>19010</onup>
+            <ondown>19010</ondown>
+            <scrolltime tween="Quadratic" easing="out">500</scrolltime>
+            <focusposition>0</focusposition>
+            <orientation>vertical</orientation>
+            <movement>1</movement>
+            <itemlayout width="258" height="114">
+                <control type="image">
+                    <left>7</left>
+                    <top>3</top>
+                    <width>255</width>
+                    <height>111</height>
+                    <texture background="true">newscenter_back.png</texture>
+                    <aspectratio>stretch</aspectratio>
+                </control>
+                <control type="label">
+                    <left>17</left>
+                    <top>10</top>
+                    <height>30</height>
+                    <width>193</width>
+                    <label>$INFO[ListItem.Label]</label>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <font>font12_title</font>
+                    <textcolor>white</textcolor>
+                    <shadowcolor>black</shadowcolor>
+                    <scroll>false</scroll>
+                </control>
+                <control type="image">
+                    <left>17</left>
+                    <top>10</top>
+                    <width>33</width>
+                    <height>33</height>
+                    <texture background="true">$INFO[ListItem.Icon]</texture>
+                    <aspectratio>keep</aspectratio>
+                </control>
+                <control type="textbox">
+                    <left>17</left>
+                    <top>40</top>
+                    <width>243</width>
+                    <height>67</height>
+                    <font>font10</font>
+                    <textcolor>white</textcolor>
+                    <shadowcolor>black</shadowcolor>
+                    <align>left</align>
+                    <aligny>top</aligny>
+                    <label>$INFO[ListItem.Label2]</label>
+                    <autoscroll delay="5000" time="5000" repeat="10000">false</autoscroll>
+                </control>
+            </itemlayout>
+            <focusedlayout width="258" height="114">
+                <control type="image">
+                    <left>7</left>
+                    <top>3</top>
+                    <width>255</width>
+                    <height>111</height>
+                    <texture background="true">newscenter_focus.png</texture>
+                    <aspectratio>stretch</aspectratio>
+                </control>
+                <control type="label">
+                    <left>17</left>
+                    <top>10</top>
+                    <height>30</height>
+                    <width>193</width>
+                    <label>$INFO[ListItem.Label]</label>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <font>font12_title</font>
+                    <textcolor>white</textcolor>
+                    <shadowcolor>black</shadowcolor>
+                    <scroll>false</scroll>
+                </control>
+                <control type="image">
+                    <left>17</left>
+                    <top>10</top>
+                    <width>33</width>
+                    <height>33</height>
+                    <texture background="true">$INFO[ListItem.Icon]</texture>
+                    <aspectratio>keep</aspectratio>
+                </control>
+                <control type="textbox">
+                    <left>17</left>
+                    <top>40</top>
+                    <width>243</width>
+                    <height>67</height>
+                    <font>font10</font>
+                    <textcolor>white</textcolor>
+                    <shadowcolor>black</shadowcolor>
+                    <align>left</align>
+                    <aligny>top</aligny>
+                    <label>$INFO[ListItem.Label2]</label>
+                    <autoscroll delay="5000" time="5000" repeat="10000">true</autoscroll>
+                </control>
+            </focusedlayout>
+            <content>
+                <item id="80148">
+                    <label>$ADDON[plugin.program.newscenter  30131]</label>
+                    <label2>$ADDON[plugin.program.newscenter  30121]</label2>
+                    <icon>home/homeicons/time2.png</icon>
+                    <onclick>RunScript(plugin.program.newscenter,"?methode=play_tagesschau_100")</onclick>
+					<visible>SubString(Window(Home).Property(NewsCenter.Visible.Tagesschau100),true)</visible>
+                </item>
+                <item id="80149">
+                    <label>$ADDON[plugin.program.newscenter  30123]</label>
+                    <label2>$ADDON[plugin.program.newscenter  30122]</label2>
+                    <icon>home/homeicons/news.png</icon>
+                    <onclick>RunScript(plugin.program.newscenter,"?methode=play_tagesschau")</onclick>
+					<visible>SubString(Window(Home).Property(NewsCenter.Visible.Tagesschau),true)</visible>
+                </item>
+                <item id="80150">
+                    <label>$ADDON[plugin.program.newscenter  30136]</label>
+                    <label2>$ADDON[plugin.program.newscenter  30130]</label2>
+                    <icon>home/homeicons/news.png</icon>
+                    <onclick>RunScript(plugin.program.newscenter,"?methode=play_mdr_aktuell_130")</onclick>
+					<visible>SubString(Window(Home).Property(NewsCenter.Visible.MDRAktuell),true)</visible>
+                </item>
+				<item id="80151">
+                    <label>$ADDON[plugin.program.newscenter  30095]</label>
+                    <label2>$ADDON[plugin.program.newscenter  30094]</label2>
+                    <icon>home/homeicons/news.png</icon>
+                    <onclick>RunScript(plugin.program.newscenter,"?methode=play_rundschau100")</onclick>
+					<visible>SubString(Window(Home).Property(NewsCenter.Visible.BRRundschau100),true)</visible>
+                </item>
+				<item id="80152">
+                    <label>$ADDON[plugin.program.newscenter  30097]</label>
+                    <label2>$ADDON[plugin.program.newscenter  30096]</label2>
+                    <icon>home/homeicons/news.png</icon>
+                    <onclick>RunScript(plugin.program.newscenter,"?methode=play_ndraktuellkompakt")</onclick>
+					<visible>SubString(Window(Home).Property(NewsCenter.Visible.NDRKompakt),true)</visible>
+                </item>
+                <item id="80153">
+                    <label>$ADDON[plugin.program.newscenter  30138]</label>
+                    <label2>$ADDON[plugin.program.newscenter  30132]</label2>
+                    <icon>home/homeicons/zdftivi.png</icon>
+                    <onclick>RunScript(plugin.program.newscenter,"?methode=play_kinder_nachrichten")</onclick>
+					<visible>SubString(Window(Home).Property(NewsCenter.Visible.KinderNachrichten),true)</visible>
+                </item>
+                <item id="80154">
+                    <label>$ADDON[plugin.program.newscenter  30139]</label>
+                    <label2>$ADDON[plugin.program.newscenter  30134]</label2>
+                    <icon>home/homeicons/time2.png</icon>
+                    <onclick>RunScript(plugin.program.newscenter,"?methode=play_wetteronline")</onclick>
+					<visible>SubString(Window(Home).Property(NewsCenter.Visible.Wetter60),true)</visible>
+                </item>
+                <item id="80155">
+                    <label>$ADDON[plugin.program.newscenter  30140]</label>
+                    <label2>$ADDON[plugin.program.newscenter  30133]</label2>
+                    <icon>home/homeicons/weather.png</icon>
+                    <onclick>RunScript(plugin.program.newscenter,"?methode=play_tagesschauwetter")</onclick>
+					<visible>SubString(Window(Home).Property(NewsCenter.Visible.TagesschauWetter),true)</visible>
+                </item>
+                <item id="80156">
+                    <label>$ADDON[plugin.program.newscenter  30141]</label>
+                    <label2>$ADDON[plugin.program.newscenter  30124]</label2>
+                    <icon>home/homeicons/weather.png</icon>
+                    <onclick>RunScript(plugin.program.newscenter,"?methode=play_wetterinfo")</onclick>
+					<visible>SubString(Window(Home).Property(NewsCenter.Visible.WetterInfo),true)</visible>
+                </item>
+				<item id="80157">
+                    <label>$ADDON[plugin.program.newscenter  30099]</label>
+                    <label2>$ADDON[plugin.program.newscenter  30098]</label2>
+                    <icon>home/homeicons/weather.png</icon>
+                    <onclick>RunScript(plugin.program.newscenter,"?methode=play_wetternet")</onclick>
+					<visible>SubString(Window(Home).Property(NewsCenter.Visible.WetterNet),true)</visible>
+                </item>			
+            </content>
+        </control>
+		
+		<!-- =============================================================================================-->
+		<!-- =========================== VIDEO LIVE STREAM NEWS MENU =====================================-->
+		<!-- =============================================================================================-->
+		<control type="panel" id="24011">
+		    <visible>Container(19010).Hasfocus(80108)</visible>
+			<left>117</left>
+            <top>107</top>
+            <width>803</width>
+            <height>553</height>
+            <onright>19010</onright>
+            <onleft>1860</onleft>
+            <onup>19010</onup>
+            <ondown>19010</ondown>
+            <scrolltime tween="Quadratic" easing="out">500</scrolltime>
+            <focusposition>0</focusposition>
+            <orientation>vertical</orientation>
+            <movement>1</movement>
+            <itemlayout width="258" height="114">
+                <control type="image">
+                    <left>7</left>
+                    <top>3</top>
+                    <width>255</width>
+                    <height>111</height>
+                    <texture background="true">newscenter_back.png</texture>
+                    <aspectratio>stretch</aspectratio>
+                </control>
+                <control type="label">
+                    <left>17</left>
+                    <top>10</top>
+                    <height>30</height>
+                    <width>193</width>
+                    <label>$INFO[ListItem.Label]</label>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <font>font12_title</font>
+                    <textcolor>white</textcolor>
+                    <shadowcolor>black</shadowcolor>
+                    <scroll>false</scroll>
+                </control>
+                <control type="image">
+                    <left>17</left>
+                    <top>10</top>
+                    <width>33</width>
+                    <height>33</height>
+                    <texture background="true">$INFO[ListItem.Icon]</texture>
+                    <aspectratio>keep</aspectratio>
+                </control>
+                <control type="textbox">
+                    <left>17</left>
+                    <top>40</top>
+                    <width>243</width>
+                    <height>67</height>
+                    <font>font10</font>
+                    <textcolor>white</textcolor>
+                    <shadowcolor>black</shadowcolor>
+                    <align>left</align>
+                    <aligny>top</aligny>
+                    <label>$INFO[ListItem.Label2]</label>
+                    <autoscroll delay="5000" time="5000" repeat="10000">false</autoscroll>
+                </control>
+            </itemlayout>
+            <focusedlayout width="258" height="114">
+                <control type="image">
+                    <left>7</left>
+                    <top>3</top>
+                    <width>255</width>
+                    <height>111</height>
+                    <texture background="true">newscenter_focus.png</texture>
+                    <aspectratio>stretch</aspectratio>
+                </control>
+                <control type="label">
+                    <left>17</left>
+                    <top>10</top>
+                    <height>30</height>
+                    <width>193</width>
+                    <label>$INFO[ListItem.Label]</label>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <font>font12_title</font>
+                    <textcolor>white</textcolor>
+                    <shadowcolor>black</shadowcolor>
+                    <scroll>false</scroll>
+                </control>
+                <control type="image">
+                    <left>17</left>
+                    <top>10</top>
+                    <width>33</width>
+                    <height>33</height>
+                    <texture background="true">$INFO[ListItem.Icon]</texture>
+                    <aspectratio>keep</aspectratio>
+                </control>
+                <control type="textbox">
+                    <left>17</left>
+                    <top>40</top>
+                    <width>243</width>
+                    <height>67</height>
+                    <font>font10</font>
+                    <textcolor>white</textcolor>
+                    <shadowcolor>black</shadowcolor>
+                    <align>left</align>
+                    <aligny>top</aligny>
+                    <label>$INFO[ListItem.Label2]</label>
+                    <autoscroll delay="5000" time="5000" repeat="10000">true</autoscroll>
+                </control>
+            </focusedlayout>
+			<content>
+				<item id="80248">
+                    <label>$ADDON[plugin.program.newscenter  30089]</label>
+                    <label2>$ADDON[plugin.program.newscenter  30078]</label2>
+                    <icon>home/homeicons/kodi.png</icon>
+                    <onclick>RunScript(plugin.program.newscenter,?methode=play_livestream_euronews)</onclick>
+                </item>
+                <item id="80249">
+                    <label>$ADDON[plugin.program.newscenter  30088]</label>
+                    <label2>$ADDON[plugin.program.newscenter  30079]</label2>
+                    <icon>home/homeicons/kodi.png</icon>
+                    <onclick>RunScript(plugin.program.newscenter,?methode=play_livestream_ntv)</onclick>
+                </item>
+                <item id="80250">
+                    <label>$ADDON[plugin.program.newscenter  30087]</label>
+                    <label2>$ADDON[plugin.program.newscenter  30080]</label2>
+                    <icon>home/homeicons/kodi.png</icon>
+                    <onclick>RunScript(plugin.program.newscenter,?methode=play_livestream_n24)</onclick>
+                </item>
+				<item id="80251">
+                    <label>$ADDON[plugin.program.newscenter  30086]</label>
+                    <label2>$ADDON[plugin.program.newscenter  30081]</label2>
+                    <icon>home/homeicons/kodi.png</icon>
+                    <onclick>RunScript(plugin.program.newscenter?methode=play_livestream_tagesschau24)</onclick>
+                </item>
+				<item id="80252">
+                    <label>$ADDON[plugin.program.newscenter  30085]</label>
+                    <label2>$ADDON[plugin.program.newscenter  30082]</label2>
+                    <icon>home/homeicons/kodi.png</icon>
+                    <onclick>RunScript(plugin.program.newscenter,?methode=play_livestream_phoenix)</onclick>
+                </item>
+                <item id="80253">
+                    <label>$ADDON[plugin.program.newscenter  30084]</label>
+                    <label2>$ADDON[plugin.program.newscenter  30083]</label2>
+                    <icon>home/homeicons/kodi.png</icon>
+                    <onclick>RunScript(plugin.program.newscenter,?methode=play_livestream_dw)</onclick>
+                </item>		
+			</content>
+		</control>
+		
+        <!-- =============================================================================================-->
+        <!-- ================================== FUSSBALL MENU ============================================-->
+        <!-- =============================================================================================-->
+        <control type="panel" id="23010">
+            <visible>Container(19010).Hasfocus(80103)</visible>
+            <left>117</left>
+            <top>107</top>
+            <width>803</width>
+            <height>147</height>
+            <onright>19010</onright>
+            <onleft>1860</onleft>
+            <onup>19010</onup>
+            <ondown>19010</ondown>
+            <scrolltime tween="Quadratic" easing="out">500</scrolltime>
+            <focusposition>0</focusposition>
+            <orientation>vertical</orientation>
+            <movement>1</movement>
+            <itemlayout width="193" height="48">
+                <control type="image">
+                    <left>7</left>
+                    <top>3</top>
+                    <width>191</width>
+                    <height>45</height>
+                    <texture background="true">newscenter_back.png</texture>
+                    <aspectratio>stretch</aspectratio>
+                </control>
+                <control type="label">
+                    <left>15</left>
+                    <top>9</top>
+                    <height>30</height>
+                    <width>180</width>
+                    <label>$INFO[ListItem.Label]</label>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <font>font12_title</font>
+                    <textcolor>white</textcolor>
+                    <shadowcolor>black</shadowcolor>
+                    <scroll>false</scroll>
+                </control>
+            </itemlayout>
+            <focusedlayout width="193" height="48">
+                <control type="image">
+                    <left>7</left>
+                    <top>3</top>
+                    <width>191</width>
+                    <height>45</height>
+                    <texture background="true">button-focus.png</texture>
+                    <aspectratio>stretch</aspectratio>
+                </control>
+                <control type="label">
+                    <left>15</left>
+                    <top>9</top>
+                    <height>30</height>
+                    <width>180</width>
+                    <label>$INFO[ListItem.Label]</label>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <font>font12_title</font>
+                    <textcolor>white</textcolor>
+                    <shadowcolor>black</shadowcolor>
+                    <scroll>false</scroll>
+                </control>
+            </focusedlayout>
+            <content>
+                <item id="23101">
+                    <label>$ADDON[plugin.program.newscenter  30128]</label>
+                    <onclick>SetFocus(88430)</onclick>
+                    <property name="MenuIcon">home/homeicons/football.png</property>
+                    <property name="MenuIcon_over">home/homeicons/football.png</property>
+                </item>
+                <item id="23102">
+                    <label>$ADDON[plugin.program.newscenter  30125]</label>
+                    <onclick>SetFocus(88431)</onclick>
+                    <property name="MenuIcon">home/homeicons/football.png</property>
+                    <property name="MenuIcon_over">home/homeicons/football.png</property>
+                </item>
+                <item id="23103">
+                    <label>$ADDON[plugin.program.newscenter  30129]</label>
+                    <onclick>SetFocus(88430)</onclick>
+                    <property name="MenuIcon">home/homeicons/football.png</property>
+                    <property name="MenuIcon_over">home/homeicons/football.png</property>
+                </item>
+                <item id="23104">
+                    <label>$ADDON[plugin.program.newscenter  30126]</label>
+                    <onclick>SetFocus(88431)</onclick>
+                    <property name="MenuIcon">home/homeicons/football.png</property>
+                    <property name="MenuIcon_over">home/homeicons/football.png</property>
+                </item>
+				<item id="23105">
+                    <label>$ADDON[plugin.program.newscenter  30091]</label>
+                    <onclick>SetFocus(88436)</onclick>
+                    <property name="MenuIcon">home/homeicons/football.png</property>
+                    <property name="MenuIcon_over">home/homeicons/football.png</property>
+                </item>
+                <item id="23106">
+                    <label>$ADDON[plugin.program.newscenter  30092]</label>
+                    <onclick>SetFocus(88437)</onclick>
+                    <property name="MenuIcon">home/homeicons/football.png</property>
+                    <property name="MenuIcon_over">home/homeicons/football.png</property>
+                </item>
+            </content>
+        </control>
+        <!-- =============================================================================================-->
+        <!-- ==================================== NEWS FEED ==============================================-->
+        <!-- =============================================================================================-->
+        <control type="list" id="19111">
+            <visible>Container(19010).Hasfocus(80101)</visible>
+            <left>117</left>
+            <top>103</top>
+            <width>780</width>
+            <height>549</height>
+            <onright>19010</onright>
+            <onleft>9020</onleft>
+            <onup>19111</onup>
+            <ondown>19111</ondown>
+            <orientation>vertical</orientation>
+            <viewtype>list</viewtype>
+            <preloaditems>1</preloaditems>
+            <scrolltime tween="cubic">500</scrolltime>
+            <itemlayout height="183" width="160">
+                <control type="image">
+                    <left>5</left>
+                    <top>5</top>
+                    <width>775</width>
+                    <height>180</height>
+                    <aspectratio>stretch</aspectratio>
+                    <texture background="true">newscenter_back.png</texture>
+                </control>
+                <control type="image">
+                    <left>7</left>
+                    <top>7</top>
+                    <width>193</width>
+                    <height>140</height>
+                    <aspectratio>keep</aspectratio>
+                    <texture background="true">$INFO[ListItem.Icon]</texture>
+                    <bordertexture border="10">ThumbShadow.png</bordertexture>
+                    <bordersize>6</bordersize>
+                </control>
+                <control type="image">
+                    <left>10</left>
+                    <top>147</top>
+                    <width>187</width>
+                    <height>33</height>
+                    <aspectratio>keep</aspectratio>
+                    <texture>$INFO[ListItem.Property(headerpic)]</texture>
+                </control>
+                <control type="label">
+                    <left>220</left>
+                    <top>20</top>
+                    <width>533</width>
+                    <height>13</height>
+                    <font>font12_title</font>
+                    <textcolor>white</textcolor>
+                    <shadowcolor>black</shadowcolor>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <label>$INFO[ListItem.Label]</label>
+                </control>
+                <control type="label">
+                    <left>220</left>
+                    <top>47</top>
+                    <width>533</width>
+                    <height>13</height>
+                    <font>font12</font>
+                    <textcolor>white</textcolor>
+                    <shadowcolor>black</shadowcolor>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <label>$INFO[ListItem.Label2]</label>
+                </control>
+                <control type="textbox">
+                    <left>220</left>
+                    <top>73</top>
+                    <width>533</width>
+                    <height>103</height>
+                    <font>font12</font>
+                    <textcolor>white</textcolor>
+                    <shadowcolor>black</shadowcolor>
+                    <align>left</align>
+                    <aligny>top</aligny>
+                    <label>$INFO[ListItem.Property(desc)]</label>
+                </control>
+            </itemlayout>
+            <focusedlayout height="183" width="640">
+                <control type="image">
+                    <left>5</left>
+                    <top>5</top>
+                    <width>775</width>
+                    <height>180</height>
+                    <aspectratio>stretch</aspectratio>
+                    <texture background="true">newscenter_focus.png</texture>
+					<visible>Control.HasFocus(19111)</visible>
+                </control>
+				<control type="image">
+                    <left>5</left>
+                    <top>5</top>
+                    <width>775</width>
+                    <height>180</height>
+                    <aspectratio>stretch</aspectratio>
+                    <texture background="true">newscenter_back.png</texture>
+					<visible>!Control.HasFocus(19111)</visible>
+                </control>
+                <control type="image">
+                    <left>7</left>
+                    <top>7</top>
+                    <width>193</width>
+                    <height>140</height>
+                    <aspectratio>keep</aspectratio>
+                    <texture background="true">$INFO[ListItem.Icon]</texture>
+                    <bordertexture border="10">ThumbShadow.png</bordertexture>
+                    <bordersize>6</bordersize>
+                </control>
+                <control type="image">
+                    <left>10</left>
+                    <top>147</top>
+                    <width>187</width>
+                    <height>33</height>
+                    <aspectratio>keep</aspectratio>
+                    <texture>$INFO[ListItem.Property(headerpic)]</texture>
+                </control>
+                <control type="label">
+                    <left>220</left>
+                    <top>20</top>
+                    <width>533</width>
+                    <height>13</height>
+                    <font>font12_title</font>
+                    <textcolor>white</textcolor>
+                    <shadowcolor>black</shadowcolor>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <label>$INFO[ListItem.Label]</label>
+					<scroll>true</scroll>
+                </control>
+                <control type="label">
+                    <left>220</left>
+                    <top>47</top>
+                    <width>553</width>
+                    <height>13</height>
+                    <font>font12</font>
+                    <textcolor>white</textcolor>
+                    <shadowcolor>black</shadowcolor>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <label>$INFO[ListItem.Label2]</label>
+					<scroll>true</scroll>
+                </control>
+                <control type="textbox">
+                    <left>220</left>
+                    <top>73</top>
+                    <width>553</width>
+                    <height>103</height>
+                    <font>font12</font>
+                    <textcolor>white</textcolor>
+                    <shadowcolor>black</shadowcolor>
+                    <align>left</align>
+                    <aligny>top</aligny>
+                    <label>$INFO[ListItem.Property(desc)]</label>
+                    <autoscroll time="2000" delay="15000" repeat="5000">true</autoscroll>
+                </control>
+            </focusedlayout>
+            <content>
+			    <item id="1">
+				  <label>$INFO[Window(Home).Property(LatestNews.0.Title)]</label>
+				  <thumb>$INFO[Window(Home).Property(LatestNews.0.Logo)]</thumb>
+				  <label2>$INFO[Window(Home).Property(LatestNews.0.Date)]</label2>
+				  <property name="desc">$INFO[Window(Home).Property(LatestNews.0.Desc)]</property>
+				  <property name="headerpic">$INFO[Window(Home).Property(LatestNews.0.HeaderPic)]</property>
+				  <onclick>-</onclick>
+				  <icon>$INFO[Window(Home).Property(LatestNews.0.Logo)]</icon>
+				  <visible>!IsEmpty(Window(Home).Property(LatestNews.0.Title))</visible>
+				  <actualicon>$INFO[Window(Home).Property(LatestNews.0.Logo)]</actualicon>
+				</item>
+				<item id="2">
+				  <label>$INFO[Window(Home).Property(LatestNews.1.Title)]</label>
+				  <thumb>$INFO[Window(Home).Property(LatestNews.1.Logo)]</thumb>
+				  <label2>$INFO[Window(Home).Property(LatestNews.1.Date)]</label2>
+				  <property name="desc">$INFO[Window(Home).Property(LatestNews.1.Desc)]</property>
+				  <property name="headerpic">$INFO[Window(Home).Property(LatestNews.1.HeaderPic)]</property>
+				  <onclick>-</onclick>
+				  <icon>$INFO[Window(Home).Property(LatestNews.1.Logo)]</icon>
+				  <visible>!IsEmpty(Window(Home).Property(LatestNews.1.Title))</visible>
+				  <actualicon>$INFO[Window(Home).Property(LatestNews.1.Logo)]</actualicon>
+				</item>
+				<item id="3">
+				  <label>$INFO[Window(Home).Property(LatestNews.2.Title)]</label>
+				  <thumb>$INFO[Window(Home).Property(LatestNews.2.Logo)]</thumb>
+				  <label2>$INFO[Window(Home).Property(LatestNews.2.Date)]</label2>
+				  <property name="desc">$INFO[Window(Home).Property(LatestNews.2.Desc)]</property>
+				  <property name="headerpic">$INFO[Window(Home).Property(LatestNews.2.HeaderPic)]</property>
+				  <onclick>-</onclick>
+				  <icon>$INFO[Window(Home).Property(LatestNews.2.Logo)]</icon>
+				  <visible>!IsEmpty(Window(Home).Property(LatestNews.2.Title))</visible>
+				  <actualicon>$INFO[Window(Home).Property(LatestNews.2.Logo)]</actualicon>
+				</item>	
+				<item id="4">
+				  <label>$INFO[Window(Home).Property(LatestNews.3.Title)]</label>
+				  <thumb>$INFO[Window(Home).Property(LatestNews.3.Logo)]</thumb>
+				  <label2>$INFO[Window(Home).Property(LatestNews.3.Date)]</label2>
+				  <property name="desc">$INFO[Window(Home).Property(LatestNews.3.Desc)]</property>
+				  <property name="headerpic">$INFO[Window(Home).Property(LatestNews.3.HeaderPic)]</property>
+				  <onclick>-</onclick>
+				  <icon>$INFO[Window(Home).Property(LatestNews.3.Logo)]</icon>
+				  <visible>!IsEmpty(Window(Home).Property(LatestNews.3.Title))</visible>
+				  <actualicon>$INFO[Window(Home).Property(LatestNews.3.Logo)]</actualicon>
+				</item>
+				<item id="5">
+				  <label>$INFO[Window(Home).Property(LatestNews.4.Title)]</label>
+				  <thumb>$INFO[Window(Home).Property(LatestNews.4.Logo)]</thumb>
+				  <label2>$INFO[Window(Home).Property(LatestNews.4.Date)]</label2>
+				  <property name="desc">$INFO[Window(Home).Property(LatestNews.4.Desc)]</property>
+				  <property name="headerpic">$INFO[Window(Home).Property(LatestNews.4.HeaderPic)]</property>
+				  <onclick>-</onclick>
+				  <icon>$INFO[Window(Home).Property(LatestNews.4.Logo)]</icon>
+				  <visible>!IsEmpty(Window(Home).Property(LatestNews.4.Title))</visible>
+				  <actualicon>$INFO[Window(Home).Property(LatestNews.4.Logo)]</actualicon>
+				</item>
+				<item id="6">
+				  <label>$INFO[Window(Home).Property(LatestNews.5.Title)]</label>
+				  <thumb>$INFO[Window(Home).Property(LatestNews.5.Logo)]</thumb>
+				  <label2>$INFO[Window(Home).Property(LatestNews.5.Date)]</label2>
+				  <property name="desc">$INFO[Window(Home).Property(LatestNews.5.Desc)]</property>
+				  <property name="headerpic">$INFO[Window(Home).Property(LatestNews.5.HeaderPic)]</property>
+				  <onclick>-</onclick>
+				  <icon>$INFO[Window(Home).Property(LatestNews.5.Logo)]</icon>
+				  <visible>!IsEmpty(Window(Home).Property(LatestNews.5.Title))</visible>
+				  <actualicon>$INFO[Window(Home).Property(LatestNews.5.Logo)]</actualicon>
+				</item>
+				<item id="7">
+				  <label>$INFO[Window(Home).Property(LatestNews.6.Title)]</label>
+				  <thumb>$INFO[Window(Home).Property(LatestNews.6.Logo)]</thumb>
+				  <label2>$INFO[Window(Home).Property(LatestNews.6.Date)]</label2>
+				  <property name="desc">$INFO[Window(Home).Property(LatestNews.6.Desc)]</property>
+				  <property name="headerpic">$INFO[Window(Home).Property(LatestNews.6.HeaderPic)]</property>
+				  <onclick>-</onclick>
+				  <icon>$INFO[Window(Home).Property(LatestNews.6.Logo)]</icon>
+				  <visible>!IsEmpty(Window(Home).Property(LatestNews.6.Title))</visible>
+				  <actualicon>$INFO[Window(Home).Property(LatestNews.6.Logo)]</actualicon>
+				</item>
+				<item id="8">
+				  <label>$INFO[Window(Home).Property(LatestNews.7.Title)]</label>
+				  <thumb>$INFO[Window(Home).Property(LatestNews.7.Logo)]</thumb>
+				  <label2>$INFO[Window(Home).Property(LatestNews.7.Date)]</label2>
+				  <property name="desc">$INFO[Window(Home).Property(LatestNews.7.Desc)]</property>
+				  <property name="headerpic">$INFO[Window(Home).Property(LatestNews.7.HeaderPic)]</property>
+				  <onclick>-</onclick>
+				  <icon>$INFO[Window(Home).Property(LatestNews.7.Logo)]</icon>
+				  <visible>!IsEmpty(Window(Home).Property(LatestNews.7.Title))</visible>
+				  <actualicon>$INFO[Window(Home).Property(LatestNews.7.Logo)]</actualicon>
+				</item>
+				<item id="9">
+				  <label>$INFO[Window(Home).Property(LatestNews.8.Title)]</label>
+				  <thumb>$INFO[Window(Home).Property(LatestNews.8.Logo)]</thumb>
+				  <label2>$INFO[Window(Home).Property(LatestNews.8.Date)]</label2>
+				  <property name="desc">$INFO[Window(Home).Property(LatestNews.8.Desc)]</property>
+				  <property name="headerpic">$INFO[Window(Home).Property(LatestNews.8.HeaderPic)]</property>
+				  <onclick>-</onclick>
+				  <icon>$INFO[Window(Home).Property(LatestNews.8.Logo)]</icon>
+				  <visible>!IsEmpty(Window(Home).Property(LatestNews.8.Title))</visible>
+				  <actualicon>$INFO[Window(Home).Property(LatestNews.8.Logo)]</actualicon>
+				</item>	
+				<item id="10">
+				  <label>$INFO[Window(Home).Property(LatestNews.9.Title)]</label>
+				  <thumb>$INFO[Window(Home).Property(LatestNews.9.Logo)]</thumb>
+				  <label2>$INFO[Window(Home).Property(LatestNews.9.Date)]</label2>
+				  <property name="desc">$INFO[Window(Home).Property(LatestNews.9.Desc)]</property>
+				  <property name="headerpic">$INFO[Window(Home).Property(LatestNews.9.HeaderPic)]</property>
+				  <onclick>-</onclick>
+				  <icon>$INFO[Window(Home).Property(LatestNews.9.Logo)]</icon>
+				  <visible>!IsEmpty(Window(Home).Property(LatestNews.9.Title))</visible>
+				  <actualicon>$INFO[Window(Home).Property(LatestNews.9.Logo)]</actualicon>
+				</item>
+			</content>
+        </control>
+        <!-- =============================================================================================-->
+        <!-- =============================== FUSSBALL TABELLE ============================================-->
+        <!-- =============================================================================================-->
+		<control type="group">
+		<top>60</top>
+            <visible>Container(19010).Hasfocus(80103)</visible>
+            <visible>Container(23010).Hasfocus(23101)</visible>
+            <control type="label">
+                <description>Platz label</description>
+                <left>170</left>
+                <top>173</top>
+                <width>730</width>
+                <height>30</height>
+                <font>font10</font>
+                <label>$ADDON[plugin.program.newscenter  30142]</label>
+                <align>left</align>
+                <aligny>center</aligny>
+                <textcolor>blue</textcolor>
+                <shadowcolor>black</shadowcolor>
+            </control>
+            <control type="label">
+                <description>Verein label</description>
+                <left>213</left>
+                <top>173</top>
+                <width>730</width>
+                <height>30</height>
+                <font>font10</font>
+                <label>$ADDON[plugin.program.newscenter  30143]</label>
+                <align>left</align>
+                <aligny>center</aligny>
+                <textcolor>blue</textcolor>
+                <shadowcolor>black</shadowcolor>
+            </control>
+            <control type="label">
+                <description>Spiele label</description>
+                <left>427</left>
+                <top>173</top>
+                <width>730</width>
+                <height>30</height>
+                <font>font10</font>
+                <label>$ADDON[plugin.program.newscenter  30144]</label>
+                <align>left</align>
+                <aligny>center</aligny>
+                <textcolor>blue</textcolor>
+                <shadowcolor>black</shadowcolor>
+            </control>
+            <control type="label">
+                <description>header label</description>
+                <left>533</left>
+                <top>173</top>
+                <width>730</width>
+                <height>30</height>
+                <font>font10</font>
+                <label>$ADDON[plugin.program.newscenter  30145]</label>
+                <align>left</align>
+                <aligny>center</aligny>
+                <textcolor>blue</textcolor>
+                <shadowcolor>black</shadowcolor>
+            </control>
+            <control type="label">
+                <description>Tore label</description>
+                <left>670</left>
+                <top>173</top>
+                <width>730</width>
+                <height>30</height>
+                <font>font10</font>
+                <label>$ADDON[plugin.program.newscenter  30146]</label>
+                <align>left</align>
+                <aligny>center</aligny>
+                <textcolor>blue</textcolor>
+                <shadowcolor>black</shadowcolor>
+            </control>
+            <control type="label">
+                <description>Punkte label</description>
+                <left>770</left>
+                <top>173</top>
+                <width>730</width>
+                <height>30</height>
+                <font>font10</font>
+                <label>$ADDON[plugin.program.newscenter  30147]</label>
+                <align>left</align>
+                <aligny>center</aligny>
+                <textcolor>blue</textcolor>
+                <shadowcolor>black</shadowcolor>
+            </control>
+            <control type="label">
+                <description>Statistik label</description>
+                <left>843</left>
+                <top>173</top>
+                <width>730</width>
+                <height>30</height>
+                <font>font10</font>
+                <label>$ADDON[plugin.program.newscenter  30148]</label>
+                <align>left</align>
+                <aligny>center</aligny>
+                <textcolor>blue</textcolor>
+                <shadowcolor>black</shadowcolor>
+            </control>
+            <control type="list" id="88430">
+                <left>117</left>
+                <top>199</top>
+                <width>780</width>
+                <height>393</height>
+                <onleft>9020</onleft>
+                <onright>19010</onright>
+                <onup>88430</onup>
+                <ondown>88430</ondown>
+                <viewtype>list</viewtype>
+                <scrolltime tween="quadratic" easing="out">500</scrolltime>
+                <focusposition>0</focusposition>
+                <orientation>vertical</orientation>
+                <preloaditems>9</preloaditems>
+                <itemlayout width="1133" height="43">
+                    <control type="image">
+                        <left>11</left>
+                        <top>7</top>
+                        <width>33</width>
+                        <height>33</height>
+                        <texture background="true">$INFO[ListItem.Icon]</texture>
+                        <aspectratio align="left" aligny="top">stretch</aspectratio>
+                    </control>
+                    <control type="label">
+                        <description>channel</description>
+                        <left>67</left>
+                        <top>8</top>
+                        <height>30</height>
+                        <width>147</width>
+                        <label>$INFO[ListItem.Property(Platz)]</label>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font12_title</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>false</scroll>
+                    </control>
+                    <control type="label">
+                        <description>channel</description>
+                        <left>93</left>
+                        <top>8</top>
+                        <height>30</height>
+                        <width>233</width>
+                        <label>$INFO[ListItem.Label]</label>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font12_title</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>false</scroll>
+                    </control>
+                    <control type="label">
+                        <description>channel</description>
+                        <left>320</left>
+                        <top>8</top>
+                        <height>30</height>
+                        <width>147</width>
+                        <label>$INFO[ListItem.Property(Spiele)]</label>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font12_title</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>false</scroll>
+                    </control>
+                    <control type="label">
+                        <description>channel</description>
+                        <left>407</left>
+                        <top>8</top>
+                        <height>30</height>
+                        <width>147</width>
+                        <label>$INFO[ListItem.Property(Sun)]</label>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font12_title</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>false</scroll>
+                    </control>
+                    <control type="label">
+                        <description>channel</description>
+                        <left>533</left>
+                        <top>8</top>
+                        <height>30</height>
+                        <width>147</width>
+                        <label>$INFO[ListItem.Property(Tore)]</label>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font12_title</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>false</scroll>
+                    </control>
+                    <control type="label">
+                        <description>channel</description>
+                        <left>667</left>
+                        <top>8</top>
+                        <height>30</height>
+                        <width>147</width>
+                        <label>$INFO[ListItem.Property(Punkte)]</label>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font12_title</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>false</scroll>
+                    </control>
+                    <control type="image">
+                        <description>channel</description>
+                        <left>727</left>
+                        <top>18</top>
+                        <width>41</width>
+                        <height>11</height>
+                        <texture background="true">$INFO[ListItem.Property(StatPic)]</texture>
+                        <aspectratio>stretch</aspectratio>
+                    </control>
+                </itemlayout>
+                <focusedlayout width="1133" height="43">
+                    <control type="image">
+                        <left>7</left>
+                        <top>3</top>
+                        <width>771</width>
+                        <height>40</height>
+                        <texture background="true">button-focus2.png</texture>
+                        <aspectratio>stretch</aspectratio>
+                        <visible>Control.Hasfocus(88430)</visible>
+                    </control>
+                    <control type="image">
+                        <left>7</left>
+                        <top>3</top>
+                        <width>771</width>
+                        <height>40</height>
+                        <texture background="true">skin/button_klein.png</texture>
+                        <aspectratio>stretch</aspectratio>
+                        <visible>!Control.Hasfocus(88430)</visible>
+                    </control>
+                    <control type="image">
+                        <left>11</left>
+                        <top>7</top>
+                        <width>33</width>
+                        <height>33</height>
+                        <texture background="true">$INFO[ListItem.Icon]</texture>
+                        <aspectratio align="left" aligny="top">stretch</aspectratio>
+                    </control>
+                    <control type="label">
+                        <description>channel</description>
+                        <left>67</left>
+                        <top>8</top>
+                        <height>30</height>
+                        <width>147</width>
+                        <label>$INFO[ListItem.Property(Platz)]</label>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font12_title</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>false</scroll>
+                    </control>
+                    <control type="label">
+                        <description>channel</description>
+                        <left>93</left>
+                        <top>8</top>
+                        <height>30</height>
+                        <width>233</width>
+                        <label>$INFO[ListItem.Label]</label>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font12_title</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>false</scroll>
+                    </control>
+                    <control type="label">
+                        <description>channel</description>
+                        <left>320</left>
+                        <top>8</top>
+                        <height>30</height>
+                        <width>147</width>
+                        <label>$INFO[ListItem.Property(Spiele)]</label>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font12_title</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>false</scroll>
+                    </control>
+                    <control type="label">
+                        <description>channel</description>
+                        <left>407</left>
+                        <top>8</top>
+                        <height>30</height>
+                        <width>147</width>
+                        <label>$INFO[ListItem.Property(Sun)]</label>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font12_title</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>false</scroll>
+                    </control>
+                    <control type="label">
+                        <description>channel</description>
+                        <left>533</left>
+                        <top>8</top>
+                        <height>30</height>
+                        <width>147</width>
+                        <label>$INFO[ListItem.Property(Tore)]</label>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font12_title</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>false</scroll>
+                    </control>
+                    <control type="label">
+                        <description>channel</description>
+                        <left>667</left>
+                        <top>8</top>
+                        <height>30</height>
+                        <width>147</width>
+                        <label>$INFO[ListItem.Property(Punkte)]</label>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font12_title</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>false</scroll>
+                    </control>
+                    <control type="image">
+                        <description>channel</description>
+                        <left>727</left>
+                        <top>18</top>
+                        <width>41</width>
+                        <height>11</height>
+                        <texture background="true">$INFO[ListItem.Property(StatPic)]</texture>
+                        <aspectratio>stretch</aspectratio>
+                    </control>
+                </focusedlayout>
+                <content>plugin://plugin.program.newscenter/?methode=get_buli_table_items&buliliga=1</content>
+            </control>
+        </control>
+        <control type="group">
+		<top>60</top>
+            <visible>Container(19010).Hasfocus(80103)</visible>
+            <visible>Container(23010).Hasfocus(23103)</visible>
+            <control type="label">
+                <description>Platz label</description>
+                <left>170</left>
+                <top>173</top>
+                <width>730</width>
+                <height>30</height>
+                <font>font10</font>
+                <label>$ADDON[plugin.program.newscenter  30142]</label>
+                <align>left</align>
+                <aligny>center</aligny>
+                <textcolor>blue</textcolor>
+                <shadowcolor>black</shadowcolor>
+            </control>
+            <control type="label">
+                <description>Verein label</description>
+                <left>213</left>
+                <top>173</top>
+                <width>730</width>
+                <height>30</height>
+                <font>font10</font>
+                <label>$ADDON[plugin.program.newscenter  30143]</label>
+                <align>left</align>
+                <aligny>center</aligny>
+                <textcolor>blue</textcolor>
+                <shadowcolor>black</shadowcolor>
+            </control>
+            <control type="label">
+                <description>Spiele label</description>
+                <left>427</left>
+                <top>173</top>
+                <width>730</width>
+                <height>30</height>
+                <font>font10</font>
+                <label>$ADDON[plugin.program.newscenter  30144]</label>
+                <align>left</align>
+                <aligny>center</aligny>
+                <textcolor>blue</textcolor>
+                <shadowcolor>black</shadowcolor>
+            </control>
+            <control type="label">
+                <description>header label</description>
+                <left>533</left>
+                <top>173</top>
+                <width>730</width>
+                <height>30</height>
+                <font>font10</font>
+                <label>$ADDON[plugin.program.newscenter  30145]</label>
+                <align>left</align>
+                <aligny>center</aligny>
+                <textcolor>blue</textcolor>
+                <shadowcolor>black</shadowcolor>
+            </control>
+            <control type="label">
+                <description>Tore label</description>
+                <left>670</left>
+                <top>173</top>
+                <width>730</width>
+                <height>30</height>
+                <font>font10</font>
+                <label>$ADDON[plugin.program.newscenter  30146]</label>
+                <align>left</align>
+                <aligny>center</aligny>
+                <textcolor>blue</textcolor>
+                <shadowcolor>black</shadowcolor>
+            </control>
+            <control type="label">
+                <description>Punkte label</description>
+                <left>770</left>
+                <top>173</top>
+                <width>730</width>
+                <height>30</height>
+                <font>font10</font>
+                <label>$ADDON[plugin.program.newscenter  30147]</label>
+                <align>left</align>
+                <aligny>center</aligny>
+                <textcolor>blue</textcolor>
+                <shadowcolor>black</shadowcolor>
+            </control>
+            <control type="label">
+                <description>Statistik label</description>
+                <left>843</left>
+                <top>173</top>
+                <width>730</width>
+                <height>30</height>
+                <font>font10</font>
+                <label>$ADDON[plugin.program.newscenter  30148]</label>
+                <align>left</align>
+                <aligny>center</aligny>
+                <textcolor>blue</textcolor>
+                <shadowcolor>black</shadowcolor>
+            </control>
+            <control type="list" id="88430">
+                <left>117</left>
+                <top>199</top>
+                <width>780</width>
+                <height>393</height>
+                <onleft>9020</onleft>
+                <onright>19010</onright>
+                <onup>88430</onup>
+                <ondown>88430</ondown>
+                <viewtype>list</viewtype>
+                <scrolltime tween="quadratic" easing="out">500</scrolltime>
+                <focusposition>0</focusposition>
+                <orientation>vertical</orientation>
+                <preloaditems>9</preloaditems>
+                <itemlayout width="1133" height="43">
+                    <control type="image">
+                        <left>11</left>
+                        <top>7</top>
+                        <width>33</width>
+                        <height>33</height>
+                        <texture background="true">$INFO[ListItem.Icon]</texture>
+                        <aspectratio align="left" aligny="top">stretch</aspectratio>
+                    </control>
+                    <control type="label">
+                        <description>channel</description>
+                        <left>67</left>
+                        <top>8</top>
+                        <height>30</height>
+                        <width>147</width>
+                        <label>$INFO[ListItem.Property(Platz)]</label>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font12_title</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>false</scroll>
+                    </control>
+                    <control type="label">
+                        <description>channel</description>
+                        <left>93</left>
+                        <top>8</top>
+                        <height>30</height>
+                        <width>233</width>
+                        <label>$INFO[ListItem.Label]</label>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font12_title</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>false</scroll>
+                    </control>
+                    <control type="label">
+                        <description>channel</description>
+                        <left>320</left>
+                        <top>8</top>
+                        <height>30</height>
+                        <width>147</width>
+                        <label>$INFO[ListItem.Property(Spiele)]</label>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font12_title</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>false</scroll>
+                    </control>
+                    <control type="label">
+                        <description>channel</description>
+                        <left>407</left>
+                        <top>8</top>
+                        <height>30</height>
+                        <width>147</width>
+                        <label>$INFO[ListItem.Property(Sun)]</label>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font12_title</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>false</scroll>
+                    </control>
+                    <control type="label">
+                        <description>channel</description>
+                        <left>533</left>
+                        <top>8</top>
+                        <height>30</height>
+                        <width>147</width>
+                        <label>$INFO[ListItem.Property(Tore)]</label>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font12_title</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>false</scroll>
+                    </control>
+                    <control type="label">
+                        <description>channel</description>
+                        <left>667</left>
+                        <top>8</top>
+                        <height>30</height>
+                        <width>147</width>
+                        <label>$INFO[ListItem.Property(Punkte)]</label>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font12_title</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>false</scroll>
+                    </control>
+                    <control type="image">
+                        <description>channel</description>
+                        <left>727</left>
+                        <top>18</top>
+                        <width>41</width>
+                        <height>11</height>
+                        <texture background="true">$INFO[ListItem.Property(StatPic)]</texture>
+                        <aspectratio>stretch</aspectratio>
+                    </control>
+                </itemlayout>
+                <focusedlayout width="1133" height="43">
+                    <control type="image">
+                        <left>7</left>
+                        <top>3</top>
+                        <width>771</width>
+                        <height>40</height>
+                        <texture background="true">button-focus2.png</texture>
+                        <aspectratio>stretch</aspectratio>
+                        <visible>Control.Hasfocus(88430)</visible>
+                    </control>
+                    <control type="image">
+                        <left>7</left>
+                        <top>3</top>
+                        <width>771</width>
+                        <height>40</height>
+                        <texture background="true">skin/button_klein.png</texture>
+                        <aspectratio>stretch</aspectratio>
+                        <visible>!Control.Hasfocus(88430)</visible>
+                    </control>
+                    <control type="image">
+                        <left>11</left>
+                        <top>7</top>
+                        <width>33</width>
+                        <height>33</height>
+                        <texture background="true">$INFO[ListItem.Icon]</texture>
+                        <aspectratio align="left" aligny="top">stretch</aspectratio>
+                    </control>
+                    <control type="label">
+                        <description>channel</description>
+                        <left>67</left>
+                        <top>8</top>
+                        <height>30</height>
+                        <width>147</width>
+                        <label>$INFO[ListItem.Property(Platz)]</label>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font12_title</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>false</scroll>
+                    </control>
+                    <control type="label">
+                        <description>channel</description>
+                        <left>93</left>
+                        <top>8</top>
+                        <height>30</height>
+                        <width>233</width>
+                        <label>$INFO[ListItem.Label]</label>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font12_title</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>false</scroll>
+                    </control>
+                    <control type="label">
+                        <description>channel</description>
+                        <left>320</left>
+                        <top>8</top>
+                        <height>30</height>
+                        <width>147</width>
+                        <label>$INFO[ListItem.Property(Spiele)]</label>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font12_title</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>false</scroll>
+                    </control>
+                    <control type="label">
+                        <description>channel</description>
+                        <left>407</left>
+                        <top>8</top>
+                        <height>30</height>
+                        <width>147</width>
+                        <label>$INFO[ListItem.Property(Sun)]</label>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font12_title</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>false</scroll>
+                    </control>
+                    <control type="label">
+                        <description>channel</description>
+                        <left>533</left>
+                        <top>8</top>
+                        <height>30</height>
+                        <width>147</width>
+                        <label>$INFO[ListItem.Property(Tore)]</label>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font12_title</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>false</scroll>
+                    </control>
+                    <control type="label">
+                        <description>channel</description>
+                        <left>667</left>
+                        <top>8</top>
+                        <height>30</height>
+                        <width>147</width>
+                        <label>$INFO[ListItem.Property(Punkte)]</label>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font12_title</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>false</scroll>
+                    </control>
+                    <control type="image">
+                        <description>channel</description>
+                        <left>727</left>
+                        <top>18</top>
+                        <width>41</width>
+                        <height>11</height>
+                        <texture background="true">$INFO[ListItem.Property(StatPic)]</texture>
+                        <aspectratio>stretch</aspectratio>
+                    </control>
+                </focusedlayout>
+                <content>plugin://plugin.program.newscenter/?methode=get_buli_table_items&buliliga=2</content>
+            </control>
+        </control>
+        <!-- =============================================================================================-->
+        <!-- ============================ FUSSBALL SPIELERGEBNISSE =======================================-->
+        <!-- =============================================================================================-->
+		<control type="group">
+		<top>30</top>
+            <visible>Container(19010).Hasfocus(80103)</visible>
+            <visible>Container(23010).Hasfocus(23102)</visible>
+            <control type="list" id="88431">
+                <left>117</left>
+                <top>199</top>
+                <width>780</width>
+                <height>407</height>
+                <onleft>9020</onleft>
+                <onright>19010</onright>
+                <onup>88431</onup>
+                <ondown>88431</ondown>
+                <viewtype>list</viewtype>
+                <scrolltime tween="quadratic" easing="out">500</scrolltime>
+                <focusposition>0</focusposition>
+                <orientation>vertical</orientation>
+                <preloaditems>9</preloaditems>
+                <itemlayout width="1133" height="43">
+                    <control type="label">
+                        <left>17</left>
+                        <top>10</top>
+                        <height>30</height>
+                        <width>153</width>
+                        <label>$INFO[ListItem.Property(Spieldatum)]</label>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font12</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>false</scroll>
+                    </control>
+                    <control type="image">
+                        <left>200</left>
+                        <top>9</top>
+                        <width>33</width>
+                        <height>33</height>
+                        <texture background="true">$INFO[ListItem.Property(Mannschaft1Logo)]</texture>
+                        <aspectratio align="left" aligny="top">stretch</aspectratio>
+                    </control>
+                    <control type="label">
+                        <left>247</left>
+                        <top>10</top>
+                        <height>30</height>
+                        <width>167</width>
+                        <label>$INFO[ListItem.Property(Mannschaft1)]</label>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font12</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>false</scroll>
+                    </control>
+                    <control type="image">
+                        <left>460</left>
+                        <top>9</top>
+                        <width>33</width>
+                        <height>33</height>
+                        <texture background="true">$INFO[ListItem.Property(Mannschaft2Logo)]</texture>
+                        <aspectratio align="left" aligny="top">stretch</aspectratio>
+                    </control>
+                    <control type="label">
+                        <left>507</left>
+                        <top>10</top>
+                        <height>30</height>
+                        <width>167</width>
+                        <label>$INFO[ListItem.Property(Mannschaft2)]</label>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font12</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>false</scroll>
+                    </control>
+                    <control type="label">
+                        <left>733</left>
+                        <top>10</top>
+                        <height>30</height>
+                        <width>147</width>
+                        <label>$INFO[ListItem.Property(Ergebniss)]</label>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font12</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>false</scroll>
+                    </control>
+                </itemlayout>
+                <focusedlayout width="1133" height="43">
+                    <control type="image">
+                        <left>7</left>
+                        <top>5</top>
+                        <width>771</width>
+                        <height>40</height>
+                        <texture background="true">button-focus2.png</texture>
+                        <aspectratio>stretch</aspectratio>
+                        <visible>Control.Hasfocus(88431)</visible>
+                    </control>
+                    <control type="label">
+                        <left>17</left>
+                        <top>10</top>
+                        <height>30</height>
+                        <width>153</width>
+                        <label>$INFO[ListItem.Property(Spieldatum)]</label>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font12</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>false</scroll>
+                    </control>
+                    <control type="image">
+                        <left>200</left>
+                        <top>9</top>
+                        <width>33</width>
+                        <height>33</height>
+                        <texture background="true">$INFO[ListItem.Property(Mannschaft1Logo)]</texture>
+                        <aspectratio align="left" aligny="top">stretch</aspectratio>
+                    </control>
+                    <control type="label">
+                        <left>247</left>
+                        <top>10</top>
+                        <height>30</height>
+                        <width>167</width>
+                        <label>$INFO[ListItem.Property(Mannschaft1)]</label>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font12</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>false</scroll>
+                    </control>
+                    <control type="image">
+                        <left>460</left>
+                        <top>9</top>
+                        <width>33</width>
+                        <height>33</height>
+                        <texture background="true">$INFO[ListItem.Property(Mannschaft2Logo)]</texture>
+                        <aspectratio align="left" aligny="top">stretch</aspectratio>
+                    </control>
+                    <control type="label">
+                        <left>507</left>
+                        <top>10</top>
+                        <height>30</height>
+                        <width>167</width>
+                        <label>$INFO[ListItem.Property(Mannschaft2)]</label>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font12</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>false</scroll>
+                    </control>
+                    <control type="label">
+                        <left>733</left>
+                        <top>10</top>
+                        <height>30</height>
+                        <width>147</width>
+                        <label>$INFO[ListItem.Property(Ergebniss)]</label>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font12</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>false</scroll>
+                    </control>
+                </focusedlayout>
+                <content>plugin://plugin.program.newscenter/?methode=get_buli_spielplan_items&buliliga=1</content>
+            </control>
+        </control>
+        <control type="group">
+		<top>30</top>
+            <visible>Container(19010).Hasfocus(80103)</visible>
+            <visible>Container(23010).Hasfocus(23104)</visible>
+            <control type="list" id="88431">
+                <left>117</left>
+                <top>199</top>
+                <width>780</width>
+                <height>407</height>
+                <onleft>9020</onleft>
+                <onright>19010</onright>
+                <onup>88431</onup>
+                <ondown>88431</ondown>
+                <viewtype>list</viewtype>
+                <scrolltime tween="quadratic" easing="out">500</scrolltime>
+                <focusposition>0</focusposition>
+                <orientation>vertical</orientation>
+                <preloaditems>9</preloaditems>
+                <itemlayout width="1133" height="43">
+                    <control type="label">
+                        <left>17</left>
+                        <top>10</top>
+                        <height>30</height>
+                        <width>153</width>
+                        <label>$INFO[ListItem.Property(Spieldatum)]</label>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font12</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>false</scroll>
+                    </control>
+                    <control type="image">
+                        <left>200</left>
+                        <top>9</top>
+                        <width>33</width>
+                        <height>33</height>
+                        <texture background="true">$INFO[ListItem.Property(Mannschaft1Logo)]</texture>
+                        <aspectratio align="left" aligny="top">stretch</aspectratio>
+                    </control>
+                    <control type="label">
+                        <left>247</left>
+                        <top>10</top>
+                        <height>30</height>
+                        <width>167</width>
+                        <label>$INFO[ListItem.Property(Mannschaft1)]</label>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font12</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>false</scroll>
+                    </control>
+                    <control type="image">
+                        <left>460</left>
+                        <top>9</top>
+                        <width>33</width>
+                        <height>33</height>
+                        <texture background="true">$INFO[ListItem.Property(Mannschaft2Logo)]</texture>
+                        <aspectratio align="left" aligny="top">stretch</aspectratio>
+                    </control>
+                    <control type="label">
+                        <left>507</left>
+                        <top>10</top>
+                        <height>30</height>
+                        <width>167</width>
+                        <label>$INFO[ListItem.Property(Mannschaft2)]</label>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font12</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>false</scroll>
+                    </control>
+                    <control type="label">
+                        <left>733</left>
+                        <top>10</top>
+                        <height>30</height>
+                        <width>147</width>
+                        <label>$INFO[ListItem.Property(Ergebniss)]</label>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font12</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>false</scroll>
+                    </control>
+                </itemlayout>
+                <focusedlayout width="1133" height="43">
+                    <control type="image">
+                        <left>7</left>
+                        <top>5</top>
+                        <width>771</width>
+                        <height>40</height>
+                        <texture background="true">button-focus2.png</texture>
+                        <aspectratio>stretch</aspectratio>
+                        <visible>Control.Hasfocus(88431)</visible>
+                    </control>
+                    <control type="label">
+                        <left>17</left>
+                        <top>10</top>
+                        <height>30</height>
+                        <width>153</width>
+                        <label>$INFO[ListItem.Property(Spieldatum)]</label>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font12</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>false</scroll>
+                    </control>
+                    <control type="image">
+                        <left>200</left>
+                        <top>9</top>
+                        <width>33</width>
+                        <height>33</height>
+                        <texture background="true">$INFO[ListItem.Property(Mannschaft1Logo)]</texture>
+                        <aspectratio align="left" aligny="top">stretch</aspectratio>
+                    </control>
+                    <control type="label">
+                        <left>247</left>
+                        <top>10</top>
+                        <height>30</height>
+                        <width>167</width>
+                        <label>$INFO[ListItem.Property(Mannschaft1)]</label>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font12</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>false</scroll>
+                    </control>
+                    <control type="image">
+                        <left>460</left>
+                        <top>9</top>
+                        <width>33</width>
+                        <height>33</height>
+                        <texture background="true">$INFO[ListItem.Property(Mannschaft2Logo)]</texture>
+                        <aspectratio align="left" aligny="top">stretch</aspectratio>
+                    </control>
+                    <control type="label">
+                        <left>507</left>
+                        <top>10</top>
+                        <height>30</height>
+                        <width>167</width>
+                        <label>$INFO[ListItem.Property(Mannschaft2)]</label>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font12</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>false</scroll>
+                    </control>
+                    <control type="label">
+                        <left>733</left>
+                        <top>10</top>
+                        <height>30</height>
+                        <width>147</width>
+                        <label>$INFO[ListItem.Property(Ergebniss)]</label>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font12</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>false</scroll>
+                    </control>
+                </focusedlayout>
+                <content>plugin://plugin.program.newscenter/?methode=get_buli_spielplan_items&buliliga=2</content>
+            </control>
+        </control>
+		<!-- =============================================================================================-->
+        <!-- ============================ FUSSBALL NÄCHSTE SPIELE ========================================-->
+        <!-- =============================================================================================-->
+		<control type="group">
+		<top>30</top>
+            <visible>Container(19010).Hasfocus(80103)</visible>
+            <visible>Container(23010).Hasfocus(23105)</visible>
+            <control type="list" id="88436">
+                <left>117</left>
+                <top>199</top>
+                <width>780</width>
+                <height>407</height>
+                <onleft>9020</onleft>
+                <onright>19010</onright>
+                <onup>88436</onup>
+                <ondown>88436</ondown>
+                <viewtype>list</viewtype>
+                <scrolltime tween="quadratic" easing="out">500</scrolltime>
+                <focusposition>0</focusposition>
+                <orientation>vertical</orientation>
+                <preloaditems>9</preloaditems>
+                <itemlayout width="1133" height="43">
+                    <control type="label">
+                        <left>17</left>
+                        <top>10</top>
+                        <height>30</height>
+                        <width>153</width>
+                        <label>$INFO[ListItem.Property(Spieldatum)]</label>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font12</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>false</scroll>
+                    </control>
+                    <control type="image">
+                        <left>200</left>
+                        <top>9</top>
+                        <width>33</width>
+                        <height>33</height>
+                        <texture background="true">$INFO[ListItem.Property(Mannschaft1Logo)]</texture>
+                        <aspectratio align="left" aligny="top">stretch</aspectratio>
+                    </control>
+                    <control type="label">
+                        <left>247</left>
+                        <top>10</top>
+                        <height>30</height>
+                        <width>167</width>
+                        <label>$INFO[ListItem.Property(Mannschaft1)]</label>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font12</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>false</scroll>
+                    </control>
+                    <control type="image">
+                        <left>460</left>
+                        <top>9</top>
+                        <width>33</width>
+                        <height>33</height>
+                        <texture background="true">$INFO[ListItem.Property(Mannschaft2Logo)]</texture>
+                        <aspectratio align="left" aligny="top">stretch</aspectratio>
+                    </control>
+                    <control type="label">
+                        <left>507</left>
+                        <top>10</top>
+                        <height>30</height>
+                        <width>167</width>
+                        <label>$INFO[ListItem.Property(Mannschaft2)]</label>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font12</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>false</scroll>
+                    </control>
+                    <control type="label">
+                        <left>733</left>
+                        <top>10</top>
+                        <height>30</height>
+                        <width>147</width>
+                        <label>$INFO[ListItem.Property(Ergebniss)]</label>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font12</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>false</scroll>
+                    </control>
+                </itemlayout>
+                <focusedlayout width="1133" height="43">
+                    <control type="image">
+                        <left>7</left>
+                        <top>5</top>
+                        <width>771</width>
+                        <height>40</height>
+                        <texture background="true">button-focus2.png</texture>
+                        <aspectratio>stretch</aspectratio>
+                        <visible>Control.Hasfocus(88436)</visible>
+                    </control>
+                    <control type="label">
+                        <left>17</left>
+                        <top>10</top>
+                        <height>30</height>
+                        <width>153</width>
+                        <label>$INFO[ListItem.Property(Spieldatum)]</label>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font12</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>false</scroll>
+                    </control>
+                    <control type="image">
+                        <left>200</left>
+                        <top>9</top>
+                        <width>33</width>
+                        <height>33</height>
+                        <texture background="true">$INFO[ListItem.Property(Mannschaft1Logo)]</texture>
+                        <aspectratio align="left" aligny="top">stretch</aspectratio>
+                    </control>
+                    <control type="label">
+                        <left>247</left>
+                        <top>10</top>
+                        <height>30</height>
+                        <width>167</width>
+                        <label>$INFO[ListItem.Property(Mannschaft1)]</label>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font12</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>false</scroll>
+                    </control>
+                    <control type="image">
+                        <left>460</left>
+                        <top>9</top>
+                        <width>33</width>
+                        <height>33</height>
+                        <texture background="true">$INFO[ListItem.Property(Mannschaft2Logo)]</texture>
+                        <aspectratio align="left" aligny="top">stretch</aspectratio>
+                    </control>
+                    <control type="label">
+                        <left>507</left>
+                        <top>10</top>
+                        <height>30</height>
+                        <width>167</width>
+                        <label>$INFO[ListItem.Property(Mannschaft2)]</label>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font12</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>false</scroll>
+                    </control>
+                    <control type="label">
+                        <left>733</left>
+                        <top>10</top>
+                        <height>30</height>
+                        <width>147</width>
+                        <label>$INFO[ListItem.Property(Ergebniss)]</label>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font12</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>false</scroll>
+                    </control>
+                </focusedlayout>
+                <content>plugin://plugin.program.newscenter/?methode=get_buli_naechsterspieltag_items&buliliga=1</content>
+            </control>
+        </control>
+        <control type="group">
+		<top>30</top>
+            <visible>Container(19010).Hasfocus(80103)</visible>
+            <visible>Container(23010).Hasfocus(23106)</visible>
+            <control type="list" id="88437">
+                <left>117</left>
+                <top>199</top>
+                <width>780</width>
+                <height>407</height>
+                <onleft>9020</onleft>
+                <onright>19010</onright>
+                <onup>88437</onup>
+                <ondown>88437</ondown>
+                <viewtype>list</viewtype>
+                <scrolltime tween="quadratic" easing="out">500</scrolltime>
+                <focusposition>0</focusposition>
+                <orientation>vertical</orientation>
+                <preloaditems>9</preloaditems>
+                <itemlayout width="1133" height="43">
+                    <control type="label">
+                        <left>17</left>
+                        <top>10</top>
+                        <height>30</height>
+                        <width>153</width>
+                        <label>$INFO[ListItem.Property(Spieldatum)]</label>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font12</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>false</scroll>
+                    </control>
+                    <control type="image">
+                        <left>200</left>
+                        <top>9</top>
+                        <width>33</width>
+                        <height>33</height>
+                        <texture background="true">$INFO[ListItem.Property(Mannschaft1Logo)]</texture>
+                        <aspectratio align="left" aligny="top">stretch</aspectratio>
+                    </control>
+                    <control type="label">
+                        <left>247</left>
+                        <top>10</top>
+                        <height>30</height>
+                        <width>167</width>
+                        <label>$INFO[ListItem.Property(Mannschaft1)]</label>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font12</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>false</scroll>
+                    </control>
+                    <control type="image">
+                        <left>460</left>
+                        <top>9</top>
+                        <width>33</width>
+                        <height>33</height>
+                        <texture background="true">$INFO[ListItem.Property(Mannschaft2Logo)]</texture>
+                        <aspectratio align="left" aligny="top">stretch</aspectratio>
+                    </control>
+                    <control type="label">
+                        <left>507</left>
+                        <top>10</top>
+                        <height>30</height>
+                        <width>167</width>
+                        <label>$INFO[ListItem.Property(Mannschaft2)]</label>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font12</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>false</scroll>
+                    </control>
+                    <control type="label">
+                        <left>733</left>
+                        <top>10</top>
+                        <height>30</height>
+                        <width>147</width>
+                        <label>$INFO[ListItem.Property(Ergebniss)]</label>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font12</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>false</scroll>
+                    </control>
+                </itemlayout>
+                <focusedlayout width="1133" height="43">
+                    <control type="image">
+                        <left>7</left>
+                        <top>5</top>
+                        <width>771</width>
+                        <height>40</height>
+                        <texture background="true">button-focus2.png</texture>
+                        <aspectratio>stretch</aspectratio>
+                        <visible>Control.Hasfocus(88437)</visible>
+                    </control>
+                    <control type="label">
+                        <left>17</left>
+                        <top>10</top>
+                        <height>30</height>
+                        <width>153</width>
+                        <label>$INFO[ListItem.Property(Spieldatum)]</label>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font12</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>false</scroll>
+                    </control>
+                    <control type="image">
+                        <left>200</left>
+                        <top>9</top>
+                        <width>33</width>
+                        <height>33</height>
+                        <texture background="true">$INFO[ListItem.Property(Mannschaft1Logo)]</texture>
+                        <aspectratio align="left" aligny="top">stretch</aspectratio>
+                    </control>
+                    <control type="label">
+                        <left>247</left>
+                        <top>10</top>
+                        <height>30</height>
+                        <width>167</width>
+                        <label>$INFO[ListItem.Property(Mannschaft1)]</label>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font12</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>false</scroll>
+                    </control>
+                    <control type="image">
+                        <left>460</left>
+                        <top>9</top>
+                        <width>33</width>
+                        <height>33</height>
+                        <texture background="true">$INFO[ListItem.Property(Mannschaft2Logo)]</texture>
+                        <aspectratio align="left" aligny="top">stretch</aspectratio>
+                    </control>
+                    <control type="label">
+                        <left>507</left>
+                        <top>10</top>
+                        <height>30</height>
+                        <width>167</width>
+                        <label>$INFO[ListItem.Property(Mannschaft2)]</label>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font12</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>false</scroll>
+                    </control>
+                    <control type="label">
+                        <left>733</left>
+                        <top>10</top>
+                        <height>30</height>
+                        <width>147</width>
+                        <label>$INFO[ListItem.Property(Ergebniss)]</label>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font12</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>false</scroll>
+                    </control>
+                </focusedlayout>
+                <content>plugin://plugin.program.newscenter/?methode=get_buli_naechsterspieltag_items&buliliga=2</content>
+            </control>
+        </control>
+		<!-- =============================================================================================-->
+        <!-- ========================= DEUTSCHLAND WETTER DATEN BILDER ===================================-->
+        <!-- =============================================================================================-->
+        <control type="group">
+            <visible>Container(19010).Hasfocus(80104)</visible>
+            <control type="panel" id="88435">
+                <left>117</left>
+                <top>107</top>
+                <width>803</width>
+                <height>147</height>
+                <onleft>9020</onleft>
+                <onright>19010</onright>
+                <onup>88435</onup>
+                <ondown>88435</ondown>
+                <viewtype>list</viewtype>
+                <scrolltime tween="quadratic" easing="out">500</scrolltime>
+                <focusposition>0</focusposition>
+                <orientation>vertical</orientation>
+                <preloaditems>9</preloaditems>
+                <itemlayout width="253" height="48">
+                    <control type="image">
+                        <left>7</left>
+                        <top>3</top>
+                        <width>251</width>
+                        <height>45</height>
+                        <texture background="true">newscenter_back.png</texture>
+                        <aspectratio>stretch</aspectratio>
+                    </control>
+                    <control type="label">
+                        <left>17</left>
+                        <top>9</top>
+                        <height>30</height>
+                        <width>220</width>
+                        <label>$INFO[ListItem.Label]</label>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <font>font12_title</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>false</scroll>
+                    </control>
+                </itemlayout>
+                <focusedlayout width="253" height="48">
+                    <control type="image">
+                        <left>7</left>
+                        <top>3</top>
+                        <width>251</width>
+                        <height>45</height>
+                        <texture background="true">button-focus.png</texture>
+                        <aspectratio>stretch</aspectratio>
+                        <visible>Control.Hasfocus(88435)</visible>
+                    </control>
+                    <control type="image">
+                        <left>7</left>
+                        <top>3</top>
+                        <width>251</width>
+                        <height>45</height>
+                        <texture background="true">OverlayDialogBackground.png</texture>
+                        <aspectratio>stretch</aspectratio>
+                        <visible>!Control.Hasfocus(88435)</visible>
+                    </control>
+                    <control type="label">
+                        <left>17</left>
+                        <top>9</top>
+                        <height>30</height>
+                        <width>220</width>
+                        <label>$INFO[ListItem.Label]</label>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <font>font12_title</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>false</scroll>
+                    </control>
+                </focusedlayout>
+                <content>plugin://plugin.program.newscenter/?methode=get_dwd_pics_base_uwz</content>
+            </control>
+            <control type="image">
+                <left>885</left>
+                <top>113</top>
+                <width>10</width>
+                <height>10</height>
+                <texture background="true">scroll-up.png</texture>
+                <aspectratio align="left" aligny="top">keep</aspectratio>
+            </control>
+            <control type="image">
+                <left>885</left>
+                <top>240</top>
+                <width>10</width>
+                <height>10</height>
+                <texture background="true">scroll-down.png</texture>
+                <aspectratio align="left" aligny="top">keep</aspectratio>
+            </control>
+            <control type="image">
+                <left>123</left>
+                <top>262</top>
+                <width>770</width>
+                <height>387</height>
+                <texture background="true">$INFO[Container(88435).ListItem.Icon]</texture>
+                <aspectratio align="center" aligny="top">keep</aspectratio>
+            </control>
+        </control>
+		<!-- =============================================================================================-->
+        <!-- ========================== BUNDESLAND WETTER DATEN BILDER ===================================-->
+        <!-- =============================================================================================-->
+        <control type="group">
+            <visible>Container(19010).Hasfocus(80105)</visible>
+            <control type="panel" id="88432">
+                <left>117</left>
+                <top>107</top>
+                <width>803</width>
+                <height>147</height>
+                <onleft>9020</onleft>
+                <onright>19010</onright>
+                <onup>88432</onup>
+                <ondown>88432</ondown>
+                <viewtype>list</viewtype>
+                <scrolltime tween="quadratic" easing="out">500</scrolltime>
+                <focusposition>0</focusposition>
+                <orientation>vertical</orientation>
+                <preloaditems>9</preloaditems>
+                <itemlayout width="253" height="48">
+                    <control type="image">
+                        <left>7</left>
+                        <top>3</top>
+                        <width>251</width>
+                        <height>45</height>
+                        <texture background="true">newscenter_back.png</texture>
+                        <aspectratio>stretch</aspectratio>
+                    </control>
+                    <control type="label">
+                        <left>17</left>
+                        <top>9</top>
+                        <height>30</height>
+                        <width>220</width>
+                        <label>$INFO[ListItem.Label]</label>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <font>font12_title</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>false</scroll>
+                    </control>
+                </itemlayout>
+                <focusedlayout width="253" height="48">
+                    <control type="image">
+                        <left>7</left>
+                        <top>3</top>
+                        <width>251</width>
+                        <height>45</height>
+                        <texture background="true">button-focus.png</texture>
+                        <aspectratio>stretch</aspectratio>
+                        <visible>Control.Hasfocus(88432)</visible>
+                    </control>
+                    <control type="image">
+                        <left>7</left>
+                        <top>3</top>
+                        <width>251</width>
+                        <height>45</height>
+                        <texture background="true">OverlayDialogBackground.png</texture>
+                        <aspectratio>stretch</aspectratio>
+                        <visible>!Control.Hasfocus(88432)</visible>
+                    </control>
+                    <control type="label">
+                        <left>17</left>
+                        <top>9</top>
+                        <height>30</height>
+                        <width>220</width>
+                        <label>$INFO[ListItem.Label]</label>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <font>font12_title</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>false</scroll>
+                    </control>
+                </focusedlayout>
+                <content>plugin://plugin.program.newscenter/?methode=get_dwd_pics_bundesland_uwz</content>
+            </control>
+            <control type="image">
+                <left>885</left>
+                <top>113</top>
+                <width>10</width>
+                <height>10</height>
+                <texture background="true">scroll-up.png</texture>
+                <aspectratio align="left" aligny="top">keep</aspectratio>
+            </control>
+            <control type="image">
+                <left>885</left>
+                <top>240</top>
+                <width>10</width>
+                <height>10</height>
+                <texture background="true">scroll-down.png</texture>
+                <aspectratio align="left" aligny="top">keep</aspectratio>
+            </control>
+            <control type="image">
+                <left>123</left>
+                <top>262</top>
+                <width>770</width>
+                <height>387</height>
+                <texture background="true">$INFO[Container(88432).ListItem.Icon]</texture>
+                <aspectratio align="center" aligny="top">keep</aspectratio>
+            </control>
+        </control>
+        <!-- =============================================================================================-->
+        <!-- ============================ WETTERWARNUNG DATEN BILDER =====================================-->
+        <!-- =============================================================================================-->
+        <control type="group">
+            <visible>Container(19010).Hasfocus(80106)</visible>
+            <control type="list" id="88433">
+                <left>117</left>
+                <top>107</top>
+                <width>780</width>
+                <height>553</height>
+                <onleft>9020</onleft>
+                <onright>19010</onright>
+                <onup>88433</onup>
+                <ondown>88433</ondown>
+                <viewtype>list</viewtype>
+                <scrolltime tween="quadratic" easing="out">500</scrolltime>
+                <focusposition>0</focusposition>
+                <orientation>vertical</orientation>
+                <preloaditems>9</preloaditems>
+                <itemlayout width="258" height="232">
+                    <control type="image">
+                        <left>7</left>
+                        <top>3</top>
+                        <width>772</width>
+                        <height>227</height>
+                        <texture background="true">newscenter_back.png</texture>
+                        <aspectratio>stretch</aspectratio>
+                    </control>
+                    <control type="image">
+                        <left>10</left>
+                        <top>7</top>
+                        <width>127</width>
+                        <height>127</height>
+                        <texture background="true">$INFO[ListItem.Icon]</texture>
+                        <aspectratio align="left" aligny="top">keep</aspectratio>
+                    </control>
+                    <control type="label">
+                        <left>147</left>
+                        <top>7</top>
+                        <height>30</height>
+                        <width>610</width>
+                        <label>$INFO[ListItem.Property(Start)] - $INFO[ListItem.Property(Ende)]</label>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font12_title</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>false</scroll>
+                    </control>
+                    <control type="label">
+                        <left>147</left>
+                        <top>33</top>
+                        <height>30</height>
+                        <width>610</width>
+                        <label>$INFO[ListItem.Label]</label>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font12_title</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>false</scroll>
+                    </control>
+                    <control type="label">
+                        <left>147</left>
+                        <top>60</top>
+                        <height>30</height>
+                        <width>610</width>
+                        <label>$LOCALIZE[504044]: $INFO[ListItem.Property(Severity)] - $INFO[ListItem.Property(Type)]</label>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>primal_15</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>false</scroll>
+                    </control>
+                    <control type="textbox">
+                        <left>13</left>
+                        <top>123</top>
+                        <width>733</width>
+                        <height>107</height>
+                        <font>font13</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <align>left</align>
+                        <aligny>top</aligny>
+                        <label>$INFO[ListItem.Property(LongText)]</label>
+                        <autoscroll time="2000" delay="15000" repeat="5000">false</autoscroll>
+                    </control>
+                </itemlayout>
+                <focusedlayout width="258" height="232">
+					<control type="image">
+						<left>7</left>
+						<top>3</top>
+						<width>772</width>
+						<height>227</height>
+						<aspectratio>stretch</aspectratio>
+						<texture background="true">newscenter_focus.png</texture>
+						<visible>Control.HasFocus(88433)</visible>
+					</control>
+					<control type="image">
+						<left>7</left>
+						<top>3</top>
+						<width>772</width>
+						<height>227</height>
+						<aspectratio>stretch</aspectratio>
+						<texture background="true">newscenter_back.png</texture>
+						<visible>!Control.HasFocus(88433)</visible>
+					</control>
+                    <control type="image">
+                        <left>10</left>
+                        <top>7</top>
+                        <width>127</width>
+                        <height>127</height>
+                        <texture background="true">$INFO[ListItem.Icon]</texture>
+                        <aspectratio align="left" aligny="top">keep</aspectratio>
+                    </control>
+                    <control type="label">
+                        <left>147</left>
+                        <top>7</top>
+                        <height>30</height>
+                        <width>610</width>
+                        <label>$INFO[ListItem.Property(Start)] - $INFO[ListItem.Property(Ende)]</label>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font12_title</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>true</scroll>
+                    </control>
+                    <control type="label">
+                        <left>147</left>
+                        <top>33</top>
+                        <height>30</height>
+                        <width>610</width>
+                        <label>$INFO[ListItem.Label]</label>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font12_title</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>true</scroll>
+                    </control>
+                    <control type="label">
+                        <left>147</left>
+                        <top>60</top>
+                        <height>30</height>
+                        <width>610</width>
+                        <label>$LOCALIZE[504044]: $INFO[ListItem.Property(Severity)] - $INFO[ListItem.Property(Type)]</label>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>primal_15</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>true</scroll>
+                    </control>
+                    <control type="textbox">
+                        <left>13</left>
+                        <top>123</top>
+                        <width>733</width>
+                        <height>107</height>
+                        <font>font13</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <align>left</align>
+                        <aligny>top</aligny>
+                        <label>$INFO[ListItem.Property(LongText)]</label>
+                        <autoscroll time="2000" delay="15000" repeat="5000">true</autoscroll>
+                    </control>
+                </focusedlayout>
+                <content>plugin://plugin.program.newscenter/?methode=get_unwetter_warnungen</content>
+            </control>
+        </control>
+        <!-- =============================================================================================-->
+        <!-- ============================ POLLENWARNUNG INFOS & BILDER ===================================-->
+        <!-- =============================================================================================-->
+        <control type="group">
+            <visible>Container(19010).Hasfocus(80107)</visible>
+            <control type="image">
+                <left>570</left>
+                <top>372</top>
+                <width>331</width>
+                <height>279</height>
+                <texture background="true">newscenter_back.png</texture>
+                <aspectratio>stretch</aspectratio>
+            </control>
+            <control type="label">
+                <left>590</left>
+                <top>380</top>
+                <height>30</height>
+                <width>433</width>
+                <label>$ADDON[plugin.program.newscenter  30100]</label>
+                <align>left</align>
+                <aligny>center</aligny>
+                <font>font12_title</font>
+                <textcolor>white</textcolor>
+                <shadowcolor>black</shadowcolor>
+                <scroll>false</scroll>
+            </control>
+            <control type="label">
+                <left>590</left>
+                <top>425</top>
+                <height>30</height>
+                <width>433</width>
+                <label>$ADDON[plugin.program.newscenter  30101]</label>
+                <align>left</align>
+                <aligny>center</aligny>
+                <font>font12</font>
+                <textcolor>white</textcolor>
+                <shadowcolor>black</shadowcolor>
+                <scroll>false</scroll>
+            </control>
+            <control type="image">
+                <left>590</left>
+                <top>453</top>
+                <width>287</width>
+                <height>11</height>
+                <texture background="true">0-pollen.png</texture>
+                <aspectratio>stretch</aspectratio>
+            </control>
+            <control type="label">
+                <left>590</left>
+                <top>465</top>
+                <height>30</height>
+                <width>420</width>
+                <label>$ADDON[plugin.program.newscenter  30102]</label>
+                <align>left</align>
+                <aligny>center</aligny>
+                <font>font12</font>
+                <textcolor>white</textcolor>
+                <shadowcolor>black</shadowcolor>
+                <scroll>false</scroll>
+            </control>
+            <control type="image">
+                <left>590</left>
+                <top>493</top>
+                <width>287</width>
+                <height>11</height>
+                <texture background="true">1-pollen.png</texture>
+                <aspectratio>stretch</aspectratio>
+            </control>
+            <control type="label">
+                <left>590</left>
+                <top>505</top>
+                <height>30</height>
+                <width>420</width>
+                <label>$ADDON[plugin.program.newscenter  30103]</label>
+                <align>left</align>
+                <aligny>center</aligny>
+                <font>font12</font>
+                <textcolor>white</textcolor>
+                <shadowcolor>black</shadowcolor>
+                <scroll>false</scroll>
+            </control>
+            <control type="image">
+                <left>590</left>
+                <top>533</top>
+                <width>287</width>
+                <height>11</height>
+                <texture background="true">2-pollen.png</texture>
+                <aspectratio>stretch</aspectratio>
+            </control>
+            <control type="label">
+                <left>590</left>
+                <top>545</top>
+                <height>30</height>
+                <width>420</width>
+                <label>$ADDON[plugin.program.newscenter  30104]</label>
+                <align>left</align>
+                <aligny>center</aligny>
+                <font>font12</font>
+                <textcolor>white</textcolor>
+                <shadowcolor>black</shadowcolor>
+                <scroll>false</scroll>
+            </control>
+            <control type="image">
+                <left>590</left>
+                <top>573</top>
+                <width>287</width>
+                <height>11</height>
+                <texture background="true">3-pollen.png</texture>
+                <aspectratio>stretch</aspectratio>
+            </control>
+            <control type="wraplist" id="88434">
+                <left>117</left>
+                <top>107</top>
+                <width>790</width>
+                <height>543</height>
+                <onleft>9020</onleft>
+                <onright>19010</onright>
+                <onup>88434</onup>
+                <ondown>88434</ondown>
+                <viewtype>list</viewtype>
+                <scrolltime tween="quadratic" easing="out">500</scrolltime>
+                <focusposition>0</focusposition>
+                <orientation>vertical</orientation>
+                <preloaditems>9</preloaditems>
+                <itemlayout width="773" height="47">
+                    <control type="image">
+                        <left>0</left>
+                        <top>2</top>
+                        <width>443</width>
+                        <height>45</height>
+                        <texture background="true">newscenter_back.png</texture>
+                        <aspectratio>stretch</aspectratio>
+                    </control>
+                    <control type="label">
+                        <left>13</left>
+                        <top>10</top>
+                        <height>30</height>
+                        <width>433</width>
+                        <label>$INFO[ListItem.Label] - $INFO[ListItem.Label2]</label>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font12_title</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <scroll>false</scroll>
+                    </control>
+                </itemlayout>
+                <focusedlayout width="773" height="263">
+                    <control type="group">
+                        <control type="image">
+                            <left>0</left>
+                            <top>2</top>
+                            <width>784</width>
+                            <height>260</height>
+                            <texture background="true">newscenter_back.png</texture>
+                            <aspectratio>stretch</aspectratio>
+                            <visible>!Control.Hasfocus(88434)</visible>
+                        </control>
+                        <control type="image">
+                            <left>0</left>
+                            <top>2</top>
+                            <width>784</width>
+                            <height>260</height>
+                            <texture background="true">newscenter_focus.png</texture>
+                            <aspectratio>stretch</aspectratio>
+                            <colordiffuse>$VAR[BackColorButton]</colordiffuse>
+                            <visible>Control.Hasfocus(88434)</visible>
+                        </control>
+                        <control type="image">
+                            <left>7</left>
+                            <top>37</top>
+                            <width>93</width>
+                            <height>107</height>
+                            <texture background="true">$INFO[ListItem.Property(0_Belastung)]-pollen.png</texture>
+                            <aspectratio align="left" aligny="top">stretch</aspectratio>
+                        </control>
+                        <control type="image">
+                            <left>7</left>
+                            <top>37</top>
+                            <width>93</width>
+                            <height>90</height>
+                            <texture background="true">$INFO[ListItem.Property(0_Pic)]</texture>
+                            <aspectratio align="left" aligny="top">scale</aspectratio>
+                        </control>
+                        <control type="label">
+                            <left>7</left>
+                            <top>120</top>
+                            <height>30</height>
+                            <width>87</width>
+                            <label>$INFO[ListItem.Property(0_Name)]</label>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <font>font10</font>
+                            <textcolor>white</textcolor>
+                            <shadowcolor>black</shadowcolor>
+                            <scroll>false</scroll>
+                        </control>
+                        <control type="image">
+                            <left>103</left>
+                            <top>37</top>
+                            <width>93</width>
+                            <height>107</height>
+                            <texture background="true">$INFO[ListItem.Property(1_Belastung)]-pollen.png</texture>
+                            <aspectratio align="left" aligny="top">stretch</aspectratio>
+                        </control>
+                        <control type="image">
+                            <left>103</left>
+                            <top>37</top>
+                            <width>93</width>
+                            <height>90</height>
+                            <texture background="true">$INFO[ListItem.Property(1_Pic)]</texture>
+                            <aspectratio align="left" aligny="top">scale</aspectratio>
+                        </control>
+                        <control type="label">
+                            <left>103</left>
+                            <top>120</top>
+                            <height>30</height>
+                            <width>87</width>
+                            <label>$INFO[ListItem.Property(1_Name)]</label>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <font>font10</font>
+                            <textcolor>white</textcolor>
+                            <shadowcolor>black</shadowcolor>
+                            <scroll>false</scroll>
+                        </control>
+                        <control type="image">
+                            <left>200</left>
+                            <top>37</top>
+                            <width>93</width>
+                            <height>107</height>
+                            <texture background="true">$INFO[ListItem.Property(2_Belastung)]-pollen.png</texture>
+                            <aspectratio align="left" aligny="top">stretch</aspectratio>
+                        </control>
+                        <control type="image">
+                            <left>200</left>
+                            <top>37</top>
+                            <width>93</width>
+                            <height>90</height>
+                            <texture background="true">$INFO[ListItem.Property(2_Pic)]</texture>
+                            <aspectratio align="left" aligny="top">scale</aspectratio>
+                        </control>
+                        <control type="label">
+                            <left>200</left>
+                            <top>120</top>
+                            <height>30</height>
+                            <width>87</width>
+                            <label>$INFO[ListItem.Property(2_Name)]</label>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <font>font10</font>
+                            <textcolor>white</textcolor>
+                            <shadowcolor>black</shadowcolor>
+                            <scroll>false</scroll>
+                        </control>
+                        <control type="image">
+                            <left>297</left>
+                            <top>37</top>
+                            <width>93</width>
+                            <height>107</height>
+                            <texture background="true">$INFO[ListItem.Property(3_Belastung)]-pollen.png</texture>
+                            <aspectratio align="left" aligny="top">stretch</aspectratio>
+                        </control>
+                        <control type="image">
+                            <left>297</left>
+                            <top>37</top>
+                            <width>93</width>
+                            <height>90</height>
+                            <texture background="true">$INFO[ListItem.Property(3_Pic)]</texture>
+                            <aspectratio align="left" aligny="top">scale</aspectratio>
+                        </control>
+                        <control type="label">
+                            <left>297</left>
+                            <top>120</top>
+                            <height>30</height>
+                            <width>87</width>
+                            <label>$INFO[ListItem.Property(3_Name)]</label>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <font>font10</font>
+                            <textcolor>white</textcolor>
+                            <shadowcolor>black</shadowcolor>
+                            <scroll>false</scroll>
+                        </control>
+                        <control type="image">
+                            <left>393</left>
+                            <top>37</top>
+                            <width>93</width>
+                            <height>107</height>
+                            <texture background="true">$INFO[ListItem.Property(4_Belastung)]-pollen.png</texture>
+                            <aspectratio align="left" aligny="top">stretch</aspectratio>
+                        </control>
+                        <control type="image">
+                            <left>393</left>
+                            <top>37</top>
+                            <width>93</width>
+                            <height>90</height>
+                            <texture background="true">$INFO[ListItem.Property(4_Pic)]</texture>
+                            <aspectratio align="left" aligny="top">scale</aspectratio>
+                        </control>
+                        <control type="label">
+                            <left>393</left>
+                            <top>120</top>
+                            <height>30</height>
+                            <width>87</width>
+                            <label>$INFO[ListItem.Property(4_Name)]</label>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <font>font10</font>
+                            <textcolor>white</textcolor>
+                            <shadowcolor>black</shadowcolor>
+                            <scroll>false</scroll>
+                        </control>
+                        <control type="image">
+                            <left>490</left>
+                            <top>37</top>
+                            <width>93</width>
+                            <height>107</height>
+                            <texture background="true">$INFO[ListItem.Property(5_Belastung)]-pollen.png</texture>
+                            <aspectratio align="left" aligny="top">stretch</aspectratio>
+                        </control>
+                        <control type="image">
+                            <left>490</left>
+                            <top>37</top>
+                            <width>93</width>
+                            <height>90</height>
+                            <texture background="true">$INFO[ListItem.Property(5_Pic)]</texture>
+                            <aspectratio align="left" aligny="top">scale</aspectratio>
+                        </control>
+                        <control type="label">
+                            <left>490</left>
+                            <top>120</top>
+                            <height>30</height>
+                            <width>87</width>
+                            <label>$INFO[ListItem.Property(5_Name)]</label>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <font>font10</font>
+                            <textcolor>white</textcolor>
+                            <shadowcolor>black</shadowcolor>
+                            <scroll>false</scroll>
+                        </control>
+                        <control type="image">
+                            <left>587</left>
+                            <top>37</top>
+                            <width>93</width>
+                            <height>107</height>
+                            <texture background="true">$INFO[ListItem.Property(6_Belastung)]-pollen.png</texture>
+                            <aspectratio align="left" aligny="top">stretch</aspectratio>
+                        </control>
+                        <control type="image">
+                            <left>587</left>
+                            <top>37</top>
+                            <width>93</width>
+                            <height>90</height>
+                            <texture background="true">$INFO[ListItem.Property(6_Pic)]</texture>
+                            <aspectratio align="left" aligny="top">scale</aspectratio>
+                        </control>
+                        <control type="label">
+                            <left>587</left>
+                            <top>120</top>
+                            <height>30</height>
+                            <width>87</width>
+                            <label>$INFO[ListItem.Property(6_Name)]</label>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <font>font10</font>
+                            <textcolor>white</textcolor>
+                            <shadowcolor>black</shadowcolor>
+                            <scroll>false</scroll>
+                        </control>
+                        <control type="image">
+                            <left>683</left>
+                            <top>37</top>
+                            <width>93</width>
+                            <height>107</height>
+                            <texture background="true">$INFO[ListItem.Property(7_Belastung)]-pollen.png</texture>
+                            <aspectratio align="left" aligny="top">stretch</aspectratio>
+                        </control>
+                        <control type="image">
+                            <left>683</left>
+                            <top>37</top>
+                            <width>93</width>
+                            <height>90</height>
+                            <texture background="true">$INFO[ListItem.Property(7_Pic)]</texture>
+                            <aspectratio align="left" aligny="top">scale</aspectratio>
+                        </control>
+                        <control type="label">
+                            <left>683</left>
+                            <top>120</top>
+                            <height>30</height>
+                            <width>87</width>
+                            <label>$INFO[ListItem.Property(7_Name)]</label>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <font>font10</font>
+                            <textcolor>white</textcolor>
+                            <shadowcolor>black</shadowcolor>
+                            <scroll>false</scroll>
+                        </control>
+                        <control type="image">
+                            <left>7</left>
+                            <top>147</top>
+                            <width>93</width>
+                            <height>107</height>
+                            <texture background="true">$INFO[ListItem.Property(8_Belastung)]-pollen.png</texture>
+                            <aspectratio align="left" aligny="top">stretch</aspectratio>
+                        </control>
+                        <control type="image">
+                            <left>7</left>
+                            <top>147</top>
+                            <width>93</width>
+                            <height>90</height>
+                            <texture background="true">$INFO[ListItem.Property(8_Pic)]</texture>
+                            <aspectratio align="left" aligny="top">scale</aspectratio>
+                        </control>
+                        <control type="label">
+                            <left>7</left>
+                            <top>230</top>
+                            <height>30</height>
+                            <width>87</width>
+                            <label>$INFO[ListItem.Property(8_Name)]</label>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <font>font10</font>
+                            <textcolor>white</textcolor>
+                            <shadowcolor>black</shadowcolor>
+                            <scroll>false</scroll>
+                        </control>
+                        <control type="image">
+                            <left>103</left>
+                            <top>147</top>
+                            <width>93</width>
+                            <height>107</height>
+                            <texture background="true">$INFO[ListItem.Property(9_Belastung)]-pollen.png</texture>
+                            <aspectratio align="left" aligny="top">stretch</aspectratio>
+                        </control>
+                        <control type="image">
+                            <left>103</left>
+                            <top>147</top>
+                            <width>93</width>
+                            <height>90</height>
+                            <texture background="true">$INFO[ListItem.Property(9_Pic)]</texture>
+                            <aspectratio align="left" aligny="top">scale</aspectratio>
+                        </control>
+                        <control type="label">
+                            <left>103</left>
+                            <top>230</top>
+                            <height>30</height>
+                            <width>87</width>
+                            <label>$INFO[ListItem.Property(9_Name)]</label>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <font>font10</font>
+                            <textcolor>white</textcolor>
+                            <shadowcolor>black</shadowcolor>
+                            <scroll>false</scroll>
+                        </control>
+                        <control type="image">
+                            <left>200</left>
+                            <top>147</top>
+                            <width>93</width>
+                            <height>107</height>
+                            <texture background="true">$INFO[ListItem.Property(10_Belastung)]-pollen.png</texture>
+                            <aspectratio align="left" aligny="top">stretch</aspectratio>
+                        </control>
+                        <control type="image">
+                            <left>200</left>
+                            <top>147</top>
+                            <width>93</width>
+                            <height>90</height>
+                            <texture background="true">$INFO[ListItem.Property(10_Pic)]</texture>
+                            <aspectratio align="left" aligny="top">scale</aspectratio>
+                        </control>
+                        <control type="label">
+                            <left>200</left>
+                            <top>230</top>
+                            <height>30</height>
+                            <width>87</width>
+                            <label>$INFO[ListItem.Property(10_Name)]</label>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <font>font10</font>
+                            <textcolor>white</textcolor>
+                            <shadowcolor>black</shadowcolor>
+                            <scroll>false</scroll>
+                        </control>
+                        <control type="image">
+                            <left>297</left>
+                            <top>147</top>
+                            <width>93</width>
+                            <height>107</height>
+                            <texture background="true">$INFO[ListItem.Property(11_Belastung)]-pollen.png</texture>
+                            <aspectratio align="left" aligny="top">stretch</aspectratio>
+                        </control>
+                        <control type="image">
+                            <left>297</left>
+                            <top>147</top>
+                            <width>93</width>
+                            <height>90</height>
+                            <texture background="true">$INFO[ListItem.Property(11_Pic)]</texture>
+                            <aspectratio align="left" aligny="top">scale</aspectratio>
+                        </control>
+                        <control type="label">
+                            <left>297</left>
+                            <top>230</top>
+                            <height>30</height>
+                            <width>87</width>
+                            <label>$INFO[ListItem.Property(11_Name)]</label>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <font>font10</font>
+                            <textcolor>white</textcolor>
+                            <shadowcolor>black</shadowcolor>
+                            <scroll>false</scroll>
+                        </control>
+                        <control type="image">
+                            <left>393</left>
+                            <top>147</top>
+                            <width>93</width>
+                            <height>107</height>
+                            <texture background="true">$INFO[ListItem.Property(12_Belastung)]-pollen.png</texture>
+                            <aspectratio align="left" aligny="top">stretch</aspectratio>
+                        </control>
+                        <control type="image">
+                            <left>393</left>
+                            <top>147</top>
+                            <width>93</width>
+                            <height>90</height>
+                            <texture background="true">$INFO[ListItem.Property(12_Pic)]</texture>
+                            <aspectratio align="left" aligny="top">scale</aspectratio>
+                        </control>
+                        <control type="label">
+                            <left>393</left>
+                            <top>230</top>
+                            <height>30</height>
+                            <width>87</width>
+                            <label>$INFO[ListItem.Property(12_Name)]</label>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <font>font10</font>
+                            <textcolor>white</textcolor>
+                            <shadowcolor>black</shadowcolor>
+                            <scroll>false</scroll>
+                        </control>
+                        <control type="image">
+                            <left>490</left>
+                            <top>147</top>
+                            <width>93</width>
+                            <height>107</height>
+                            <texture background="true">$INFO[ListItem.Property(13_Belastung)]-pollen.png</texture>
+                            <aspectratio align="left" aligny="top">stretch</aspectratio>
+                        </control>
+                        <control type="image">
+                            <left>490</left>
+                            <top>147</top>
+                            <width>93</width>
+                            <height>90</height>
+                            <texture background="true">$INFO[ListItem.Property(13_Pic)]</texture>
+                            <aspectratio align="left" aligny="top">scale</aspectratio>
+                        </control>
+                        <control type="label">
+                            <left>490</left>
+                            <top>230</top>
+                            <height>30</height>
+                            <width>87</width>
+                            <label>$INFO[ListItem.Property(13_Name)]</label>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <font>font10</font>
+                            <textcolor>white</textcolor>
+                            <shadowcolor>black</shadowcolor>
+                            <scroll>false</scroll>
+                        </control>
+                        <control type="image">
+                            <left>587</left>
+                            <top>147</top>
+                            <width>93</width>
+                            <height>107</height>
+                            <texture background="true">$INFO[ListItem.Property(14_Belastung)]-pollen.png</texture>
+                            <aspectratio align="left" aligny="top">stretch</aspectratio>
+                        </control>
+                        <control type="image">
+                            <left>587</left>
+                            <top>147</top>
+                            <width>93</width>
+                            <height>90</height>
+                            <texture background="true">$INFO[ListItem.Property(14_Pic)]</texture>
+                            <aspectratio align="left" aligny="top">scale</aspectratio>
+                        </control>
+                        <control type="label">
+                            <left>587</left>
+                            <top>230</top>
+                            <height>30</height>
+                            <width>87</width>
+                            <label>$INFO[ListItem.Property(14_Name)]</label>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <font>font10</font>
+                            <textcolor>white</textcolor>
+                            <shadowcolor>black</shadowcolor>
+                            <scroll>false</scroll>
+                        </control>
+                        <control type="label">
+                            <left>13</left>
+                            <top>3</top>
+                            <height>30</height>
+                            <width>667</width>
+                            <label>$INFO[ListItem.Label] - $INFO[ListItem.Label2]</label>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <font>font12_title</font>
+                            <textcolor>white</textcolor>
+                            <shadowcolor>black</shadowcolor>
+                            <scroll>false</scroll>
+                        </control>
+                    </control>
+                </focusedlayout>
+                <content>plugin://plugin.program.newscenter/?methode=get_pollen_items</content>
+            </control>
+        </control>
+
+	<variable name="NewsPreviewBundesligaTabelle">
+		<value condition="Container(23010).Hasfocus(23101)">plugin://plugin.program.newscenter/?methode=get_buli_table_items&buliliga=1</value>
+		<value condition="Container(23010).Hasfocus(23103)">plugin://plugin.program.newscenter/?methode=get_buli_table_items&buliliga=2</value>
+	</variable>
+	<variable name="NewsPreviewBundesligaSpiele">
+		<value condition="Container(23010).Hasfocus(23102)">plugin://plugin.program.newscenter/?methode=get_buli_spielplan_items&buliliga=1</value>
+		<value condition="Container(23010).Hasfocus(23104)">plugin://plugin.program.newscenter/?methode=get_buli_spielplan_items&buliliga=2</value>
+	</variable>
+
+    </controls>
+</window>

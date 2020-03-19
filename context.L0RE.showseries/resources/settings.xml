@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+<setting label="Donwload Directory" type="folder" id="folder" source="auto" option="writeable"/>
+<setting label="Dirctory for ffmpg bianry" type="folder" id="ffmpg" source="auto" />
+<setting id="quality" type="enum" label="Quality" values="480p|720p|1080p" default="1"/>
+</settings>

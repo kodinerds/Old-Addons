@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+    <category label="30110">
+        <setting id="enableinfo" type="bool" label="30114" default="true"/>
+        <setting type="sep" />
+        <setting id="mdelay" type="labelenum" label="30127" lvalues="30160|30161|30162|30163|30164" default="30163"/>
+        <setting id="screenrefresh" type="labelenum" label="30128" lvalues="30151|30152|30153|30154|30155|30156" default="30151"/>
+        <setting id="pvractive" type="bool" label="30112" default="true"/>
+    </category>
+    <category label="30105">
+        <setting id="international" type="bool" label="30120" default="true"/>
+        <setting id="german" type="bool" label="30121" default="false"/>
+        <setting id="classics" type="bool" label="30122" default="false"/>
+        <setting id="soaps" type="bool" label="30123" default="false"/>
+        <setting id="first_aired" type="bool" label="30132" default="false"/>
+        <setting id="serie_not_in_db" type="bool" label="30133" default="false"/>
+        <setting id="episode_not_in_db" type="bool" label="30134" default="false"/>        
+        <setting type="sep" />
+        <setting id="max_hl_cat" type="labelenum" label="30115" values="3|4|5|6|7|8|9|10|12|15" default="12" />
+        <setting id="prefer_hd" type="bool" label="30113" default="true" />
+        <setting id="delay" type="labelenum" label="30131" lvalues="30170|30171|30172|30173" default="30172" />
+        <setting id="advanced" type="labelenum" label="30126" values="1|3|5|8|12|15" default="1" />
+    </category>
+</settings>

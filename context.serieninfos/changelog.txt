@@ -1,0 +1,12 @@
+﻿17.12.2016
+- Initial release by L0RE
+...
+
+[B]Version 1.0.1  (30.09.2018)[/B] by realvito
+- fixed: Keine Anzeige der abgefragten Daten - da die Webseite keine Rückmeldung gibt
+- fixed: Fehlermeldung, wenn Serie nicht gefunden wurde
+- optimized: Anpassung der angezeigten InfoBox - Abmessungen und Inhalt
+
+[B]Version 1.0.2  (30.12.2018)[/B] by realvito
+- fixed: Manche Serie wird nicht angezeigt, obwohl Suchergebnis vorhanden ist (Verursacher im Script entfernt)
+- fixed: Es wird kein Ergebnis angezeigt, da die Webseite im Cache fehlerhaft oder leer ist (nochmalige direkte Abfrage der Webseite - ohne Cache)

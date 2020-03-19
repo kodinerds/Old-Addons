@@ -1,0 +1,178 @@
+<!-- plugin.program.newscenter - Unwetterkarten - START -->
+<!-- Confluence Skin adapted -->
+<window>
+        <defaultcontrol always="true">10</defaultcontrol>
+        <include>dialogeffect</include>
+        <controls>
+                <control type="group" id="576757">
+                        <left>235</left>
+                        <top>10</top>
+                        <width>810</width>
+                        <height>700</height>
+
+                        <control type="image">
+                                <description>background image</description>
+                                <left>0</left>
+                                <top>0</top>
+                                <width>810</width>
+                                <height>700</height>
+                                <texture border="40">ConfluenceDialogBack2.png</texture>
+                        </control>
+                        <control type="image">
+                                <description>Dialog Header image</description>
+                                <left>40</left>
+                                <top>16</top>
+                                <width>730</width>
+                                <height>40</height>
+                                <texture>ConfluenceDialogHeader.png</texture>
+                        </control>
+                        <control type="label" id="1">
+                                <description>header label</description>
+                                <left>40</left>
+                                <top>20</top>
+                                <width>730</width>
+                                <height>30</height>
+                                <font>font13_title</font>
+                                <label>$ADDON[plugin.program.newscenter  30207] - $INFO[Window(Home).Property(NewsCenter.PLZ)] $INFO[Window(Home).Property(NewsCenter.Ort)] - $INFO[Window(Home).Property(NewsCenter.Bundesland)]</label>  
+                                <align>center</align>
+                                <aligny>center</aligny>
+                                <textcolor>selected</textcolor>
+                                <shadowcolor>black</shadowcolor>
+                        </control>
+
+
+                        <control type="button" id="855655">
+                                <description>Close Window button</description>
+                                <left>720</left>
+                                <top>15</top>
+                                <width>64</width>
+                                <height>32</height>
+                                <label>-</label>
+                                <font>-</font>
+                                <onclick>PreviousMenu</onclick>
+                                <texturefocus>DialogCloseButton-focus.png</texturefocus>
+                                <texturenofocus>DialogCloseButton.png</texturenofocus>
+                                <onleft>10</onleft>
+                                <onright>10</onright>
+                                <onup>10</onup>
+                                <ondown>77377</ondown>
+                                <visible>system.getbool(input.enablemouse)</visible>
+                        </control>
+
+
+
+
+
+                        <control type="list" id="77377">
+                                <left>20</left>
+                                <top>60</top>
+                                <width>770</width>
+                                <height>600</height>
+                                <onup>10</onup>
+                                <ondown>10</ondown>
+                                <viewtype label="535">list</viewtype>
+                                <pagecontrol>-</pagecontrol>
+                                <scrolltime>200</scrolltime>
+                                <orientation>Horizontal</orientation>
+                                <itemlayout height="650" width="760">
+                                    <control type="image">
+                                              <left>10</left>
+                                              <top>60</top>
+                                              <width>750</width>
+                                              <height>500</height>
+                                              <align>center</align>
+                                              <aspectratio aligny="bottom">keep</aspectratio>
+                                              <texture border="0">$INFO[ListItem.Icon]</texture>
+                                    </control>
+            
+                                    <control type="label">
+                                              <left>10</left>
+                                              <top>0</top>
+                                              <width>770</width>
+                                              <height>10</height>
+                                              <font>font24_title</font>
+                                              <label>$INFO[ListItem.Label]</label>
+                                              <align>center</align>
+                                              <aligny>top</aligny>
+                                              <scroll>true</scroll>
+                                              <scrollspeed>50</scrollspeed>
+                                    </control>
+            
+
+
+                                </itemlayout>
+                                <focusedlayout height="650" width="760">
+
+                                    <control type="image">
+                                              <left>10</left>
+                                              <top>60</top>
+                                              <width>750</width>
+                                              <height>500</height>
+                                              <align>center</align>
+                                              <aspectratio aligny="bottom">keep</aspectratio>
+                                              <texture border="5">$INFO[ListItem.Icon]</texture>
+                                              <bordertexture border="5">folder-focus.png</bordertexture>
+                                              <bordersize>5</bordersize>
+                                              <visible>Control.HasFocus(77377)</visible>
+                                    </control>
+ 
+                                    <control type="image">
+                                              <left>10</left>
+                                              <top>60</top>
+                                              <width>750</width>
+                                              <height>500</height>
+                                              <align>center</align>
+                                              <aspectratio aligny="bottom">keep</aspectratio>
+                                              <texture border="0">$INFO[ListItem.Icon]</texture>
+                                              <visible>!Control.HasFocus(77377)</visible>
+                                    </control>
+           
+                                    <control type="label">
+                                              <left>10</left>
+                                              <top>0</top>
+                                              <width>770</width>
+                                              <height>10</height>
+                                              <font>font24_title</font>
+                                              <label>$INFO[ListItem.Label]</label>
+                                              <align>center</align>
+                                              <aligny>top</aligny>
+                                              <scroll>true</scroll>
+                                              <scrollspeed>50</scrollspeed>
+                                    </control>
+            
+
+
+                                </focusedlayout>
+                                <content>plugin://plugin.program.newscenter?methode=get_uwz_maps&amp;clickable=0</content> 
+            <!--  E N D E - NR 1 -->
+            
+                        </control>
+
+
+                        <control type="button" id="10">
+                                <description>Yes button</description>
+                                <left>305</left>
+                                <top>635</top>
+                                <width>200</width>
+                                <height>40</height>
+                                <label>Schließen</label>
+                                <font>font12_title</font>
+                                <textcolor>white</textcolor>
+                                <focusedcolor>white</focusedcolor>
+                                <align>center</align>
+                                <onleft>10</onleft>
+                                <onright>10</onright>
+                                <onup>77377</onup>
+                                <ondown>855655</ondown>
+                                <onclick>PreviousMenu</onclick>
+                        </control>
+
+
+
+
+                </control>
+
+        </controls>
+
+</window>
+

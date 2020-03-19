@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.autoremote" name="AutoRemote" version="1.2.2" provider-name="st3ff">
+	<requires>
+		<import addon="xbmc.python" version="2.14.0"/>
+	</requires>
+	<extension point="xbmc.python.script" library="addon.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">AutoRemote Sender</summary>
+		<description lang="en">Send messages to an AutoRemote receiver</description>
+		<license>GNU General Public License, v2</license>
+		<language></language>
+		<forum></forum>
+		<source></source>
+		<website>Kodi.tv</website>
+		<email></email>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			<screenshot>fanart.jpg</screenshot>
+		</assets>
+		<news>v1.2.2 (2017.12.17) Kodinerds Repo Release</news>
+	</extension>
+</addon>

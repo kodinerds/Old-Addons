@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="1199" type="Dialog">
+        <!-- default close button is a trap if mouse support is disabled -->
+        <defaultcontrol always="true">22</defaultcontrol>
+	<include>dialogeffect</include>
+    <onunload>ClearProperty(Widget.Senderlogo,Home)</onunload>
+    <onunload>ClearProperty(Widget.Thumb,Home)</onunload>
+    <onunload>ClearProperty(Widget.Clearlogo,Home)</onunload>
+    <onunload>ClearProperty(Widget.Label,Home)</onunload>
+    <onunload>ClearProperty(Widget.Label2,Home)</onunload>
+    <onunload>ClearProperty(Widget.Season,Home)</onunload>
+    <onunload>ClearProperty(Widget.Episode,Home)</onunload>
+    <onunload>ClearProperty(Widget.Genre,Home)</onunload>
+    <onunload>ClearProperty(Widget.Rating,Home)</onunload>
+    <onunload>ClearProperty(Widget.Plot,Home)</onunload>
+    <onunload>ClearProperty(Widget.Channel,Home)</onunload>
+    <onunload>ClearProperty(Widget.Starttime,Home)</onunload>
+    <onunload>ClearProperty(Widget.Date,Home)</onunload>
+    <onunload>ClearProperty(Widget.Runtime,Home)</onunload>
+	<controls>
+		<control type="group" id="576757">
+			<left>235</left>
+            <top>10</top>
+            <width>810</width>
+            <height>630</height>
+            <control type="image">
+                    <description>background image</description>
+                    <left>0</left>
+                    <top>0</top>
+                    <width>810</width>
+                    <height>630</height>
+                    <texture border="40">ConfluenceDialogBack2.png</texture>
+            </control>
+            <control type="image">
+                    <description>Dialog Header image</description>
+                    <left>40</left>
+                    <top>16</top>
+                    <width>730</width>
+                    <height>40</height>
+                    <texture>ConfluenceDialogHeader.png</texture>
+            </control>
+            <control type="label" id="1">
+                    <description>header label</description>
+                    <left>40</left>
+                    <top>20</top>
+                    <width>730</width>
+                    <height>30</height>
+                    <font>font13_title</font>
+                    <label>$ADDON[plugin.program.serienplaner 30100]</label>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <textcolor>selected</textcolor>
+                    <shadowcolor>black</shadowcolor>
+            </control>
+            <control type="button" id="855655">
+                    <description>Close Window button</description>
+                    <left>720</left>
+                    <top>15</top>
+                    <width>64</width>
+                    <height>32</height>
+                    <label>-</label>
+                    <font>-</font>
+                    <onclick>PreviousMenu</onclick>
+                    <texturefocus>DialogCloseButton-focus.png</texturefocus>
+                    <texturenofocus>DialogCloseButton.png</texturenofocus>
+                    <onleft>10</onleft>
+                    <onright>10</onright>
+                    <onup>10</onup>
+                    <ondown>10</ondown>
+                    <visible>system.getbool(input.enablemouse)</visible>
+            </control>
+            <control type="image">
+                <left>15</left>
+                <top>130</top>
+                <width>400</width>
+                <height>225</height>
+                <aspectratio>scale</aspectratio>
+                <texture background="true">$INFO[Window(Home).Property(Widget.Thumb)]</texture>
+                <bordertexture border="5">button-nofocus.png</bordertexture>
+                <bordersize>5</bordersize>
+            </control>
+            <control type="image">
+                <left>430</left>
+                <top>255</top>
+                <width>258</width>
+                <height>100</height>
+                <aspectratio align="center" aligny="top">keep</aspectratio>
+                <texture background="true">$INFO[Window(Home).Property(Widget.Clearlogo)]</texture>
+                <bordertexture border="5">button-nofocus.png</bordertexture>
+                <bordersize>5</bordersize>
+            </control>                        
+            <control type="image">
+                    <description>Channel Logo</description>
+                    <left>640</left>
+                    <top>70</top>
+                    <width>120</width>
+                    <height>63</height>
+                    <texture border="5">$INFO[Window(Home).Property(Widget.Senderlogo)]</texture>
+                    <aspectratio align="center" aligny="top">keep</aspectratio>
+            </control>
+            <control type="label">
+                    <description>channel</description>
+                    <left>430</left>
+                    <top>130</top>
+                    <width>200</width>
+                    <height>20</height>
+                    <label>$INFO[Window(Home).Property(Widget.Channel)]</label>                    
+            </control>
+            <control type="label">
+                    <description>Genre</description>
+                    <left>430</left>
+                    <top>155</top>
+                    <width>300</width>
+                    <height>20</height>
+                    <label>$INFO[Window(Home).Property(Widget.Genre)]</label>                    
+            </control>
+            <control type="label">
+                    <description>Date-Time-runtime</description>
+                    <left>430</left>
+                    <top>180</top>
+                    <width>350</width>
+                    <height>20</height>
+                    <label>$INFO[Window(Home).Property(Widget.date)]: $INFO[Window(Home).Property(Widget.Starttime)]Uhr - $INFO[Window(Home).Property(Widget.runtime)] Min.</label>
+            </control>        
+            <control type="label">
+                    <description>Rating</description>
+                    <left>430</left>
+                    <top>205</top>
+                    <width>200</width>
+                    <height>20</height>
+                    <label>Rating: $INFO[Window(Home).Property(Widget.Rating)]</label>                    
+            </control>                          
+            <control type="label">
+                    <description>TVShow Title</description>
+                    <left>10</left>
+                    <top>70</top>
+                    <width>790</width>
+                    <height>20</height>
+                    <textcolor>blue</textcolor>
+                    <align>center</align>
+                    <label>$INFO[Window(Home).Property(Widget.Label2)]</label>
+            </control>  
+            <control type="label">
+                    <description>Episoden Title</description>
+                    <left>10</left>
+                    <top>100</top>
+                    <width>790</width>
+                    <height>20</height>
+                    <align>center</align>
+                    <label>$INFO[Window(Home).Property(Widget.Season)]x$INFO[Window(Home).Property(Widget.Episode)] $INFO[Window(Home).Property(Widget.Label)]</label>
+            </control>                    
+            <control type="textbox">
+                    <description>Plot</description>
+                    <left>17</left>
+                    <top>360</top>
+                    <width>776</width>
+                    <height>194</height>
+                    <autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
+                    <label>$INFO[Window(Home).Property(Widget.Plot)]</label>
+            </control>
+            <control type="group">
+                <left>100</left>
+                <top>565</top>
+                <width>730</width>
+                <align>center</align>
+                <aligny>center</aligny>
+                <control type="button" id="20">
+                        <description>Switchtimer button</description>
+                        <left>0</left>
+                        <width>186</width>
+                        <height>40</height>
+                        <label>$ADDON[plugin.program.serienplaner 30107]</label>
+                        <font>font12_title</font>
+                        <textcolor>white</textcolor>
+                        <focusedcolor>white</focusedcolor>
+                        <align>center</align>
+                        <onleft>22</onleft>
+                        <onright>21</onright>
+                        <visible>System.HasAddon(service.kn.switchtimer)</visible>
+                        <onclick>RunScript(service.kn.switchtimer,action=add,channel=$INFO[Window(Home).Property(Widget.Channel)],icon=$INFO[Window(Home).Property(Widget.Senderlogo)],date=$INFO[Window(Home).Property(Widget.Datetime)],title=$INFO[Window(Home).Property(Widget.Label)])</onclick>
+                </control>
+                <control type="button" id="21">
+                        <description>Switch button</description>
+                        <left>200</left>
+                        <width>186</width>
+                        <height>40</height>
+                        <label>$ADDON[plugin.program.serienplaner 30108]</label>
+                        <font>font12_title</font>
+                        <textcolor>white</textcolor>
+                        <focusedcolor>white</focusedcolor>
+                        <align>center</align>
+                        <onleft>20</onleft>
+                        <onright>22</onright>
+                        <onclick>RunScript(plugin.prigram.serienplaner,"?methode=switch_channel&amp;pvrid=$INFO[Window(Home).Property(PVRID)]")</onclick>
+                        <onclick>PreviousMenu</onclick>
+                </control>
+                <control type="button" id="22">
+                        <description>Cancel button</description>
+                        <left>400</left>
+                        <width>186</width>
+                        <height>40</height>
+                        <label>$ADDON[plugin.program.serienplaner 30119]</label>
+                        <font>font12_title</font>
+                        <textcolor>white</textcolor>
+                        <focusedcolor>white</focusedcolor>
+                        <align>center</align>
+                        <onleft>21</onleft>
+                        <onright>20</onright>
+                        <onclick>PreviousMenu</onclick>
+                </control>
+            </control> 
+        </control>
+	</controls>
+</window>
+
+<!-- plugin.program.tvhighlights - InfoWindow - END -->

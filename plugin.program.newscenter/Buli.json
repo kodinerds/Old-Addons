@@ -1,0 +1,112 @@
+[
+     {
+        "name": "Borussia Mönchengladbach",
+        "id": "Borussia_Moenchengladbach"
+    }, {
+        "name": "Borussia Dortmund",
+        "id": "Borussia_Dortmund"
+    }, {
+        "name": "Bayer 04 Leverkusen",
+        "id": "Bayer_04_Leverkusen"
+    }, {
+        "name": "Hertha BSC",
+        "id": "Hertha_BSC"
+    }, {
+        "name": "FC Schalke 04",
+        "id": "FC_Schalke_04"
+    }, {
+        "name": "1. FSV Mainz 05",
+        "id": "FSV_Mainz_05"
+    }, {
+        "name": "VfL Wolfsburg",
+        "id": "VfL_Wolfsburg"
+    }, {
+        "name": "VfB Stuttgart",
+        "id": "VfB_Stuttgart"
+    }, {
+        "name": "Hamburger SV",
+        "id": "Hamburger_SV"
+    }, {
+        "name": "FC Ingolstadt 04",
+        "id": "FC_Ingolstadt_04"
+    }, {
+        "name": "SV Darmstadt 98",
+        "id": "SV_Darmstadt_98"
+    }, {
+        "name": "FC Augsburg 1907",
+        "id": "FC_Augsburg_1907"
+    }, {
+        "name": "Eintracht Frankfurt",
+        "id": "Eintracht_Frankfurt"
+    }, {
+        "name": "Werder Bremen",
+        "id": "Werder_Bremen"
+    }, {
+        "name": "1899 Hoffenheim",
+        "id": "TSG_1899_Hoffenheim"
+    }, {
+        "name": "Hannover 96",
+        "id": "Hannover_96"
+    }, {
+        "name": "FC Bayern München",
+        "id": "FC_Bayern_Muenchen"
+    }, {
+        "name": "RB Leipzig",
+        "id": "RB_Leipzig"
+    }, {
+        "name": "Sport-Club Freiburg",
+        "id": "Sport_Club_Freiburg"
+    }, {
+        "name": "FC St. Pauli",
+        "id": "FC_St_Pauli"
+    }, {
+        "name": "VfL Bochum",
+        "id": "VfL_Bochum"
+    }, {
+        "name": "Eintracht Braunschweig",
+        "id": "Eintracht_Braunschweig"
+    }, {
+        "name": "SV Sandhausen",
+        "id": "SV_Sandhausen"
+    }, {
+        "name": "1. FC Kaiserslautern",
+        "id": "FC_Kaiserslautern"
+    }, {
+        "name": "Karlsruher Sport-Club",
+        "id": "Karlsruher_Sport_Club"
+    }, {
+        "name": "1. FC Heidenheim",
+        "id": "1_FC_Heidenheim"
+    }, {
+        "name": "Union Berlin",
+        "id": "Union_Berlin"
+    }, {
+        "name": "DSC Arminia Bielefeld",
+        "id": "DSC_Arminia_Bielefeld"
+    }, {
+        "name": "FSV Frankfurt",
+        "id": "FSV_Frankfurt_1899"
+    }, {
+        "name": "SC Paderborn 07",
+        "id": "SC_Paderborn_07"
+    }, {
+        "name": "MSV Duisburg",
+        "id": "MSV_Duisburg"
+    }, {
+        "name": "SpVgg Greuther Fürth",
+        "id": "SpVgg_Greuther_Fuerth"
+    }, {
+        "name": "1. FC Nürnberg",
+        "id": "1_FC_Nuernberg"
+    }, {
+        "name": "Fortuna Düsseldorf",
+        "id": "Fortuna_Duesseldorf"
+    }, {
+        "name": "TSV München 1860",
+        "id": "TSV_Muenchen_1860"
+    }, {
+        "name": "1. FC Köln",
+        "id": "1._FC_Koeln"
+    }
+]
+

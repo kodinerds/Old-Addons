@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<addon id="context.L0RE.showseries" name="Zur Series" version="0.2.0" provider-name="L0RE">
+	<requires>
+		<import addon="xbmc.python" version="2.24.0"/>
+	</requires>
+	<extension point="kodi.context.item" library="addon.py">
+		<item>
+			<label>Zur Serie</label>
+			<visible>Window.IsActive(10025)</visible>
+		</item>
+	</extension>
+	<extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="de">Content Menu Show Series</summary>
+		<summary lang="en">Content Menu Show Series</summary>
+		<description lang="de">[COLOR red]- Dieses Projekt wird wegen zu geringer Nachfrage aufgelöst.[CR]- Updates für dieses Addon eingestellt ![/COLOR]</description>
+		<description lang="en">[COLOR red]- This project is canceled due to insufficient demand.[CR]- Updates for this addon discontinued ![/COLOR]</description>
+		<disclaimer lang="de">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
+		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+		<language></language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
+		<website></website>
+		<email></email>
+		<source>https://github.com/kodinerds/repo/tree/master/context.L0RE.showseries</source>
+		<assets>
+			<icon>icon.png</icon>
+		</assets>
+		<broken>
+- Dieses Projekt wird wegen zu geringer Nachfrage aufgelöst.[CR]- Updates für dieses Addon eingestellt !
+		</broken>
+		<news>[B][COLOR orangered]Version 0.2.0 (16.03.2020)[/COLOR][/B] by realvito[CR]
+- Dieses Projekt wird wegen zu geringer Nachfrage aufgelöst.[CR]- Updates für dieses Addon eingestellt !
+		</news>
+	</extension>
+</addon>

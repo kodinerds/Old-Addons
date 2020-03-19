@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+    <category label="Verzeichnis">
+        <setting label="Pfad zum Scannen" type="folder"   id="dir_to_search" default=""/>
+		<setting label="Suchmuster" type="text"   id="pattern_to_search" default=""/>
+    </category>
+</settings>

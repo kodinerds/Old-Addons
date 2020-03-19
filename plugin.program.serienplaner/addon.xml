@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="plugin.program.serienplaner" name="Serienplaner" version="0.1.4" provider-name="sveni_lee">
+    <requires>
+        <import addon="xbmc.python" version="2.25.0"/>
+        <import addon="script.module.feedparser" version="5.1.3"/>
+        <import addon="script.module.requests" version="2.3.0" />
+		<import addon="script.module.beautifulsoup4" version="4.3.2"/>
+    </requires>
+    <extension point="xbmc.python.script" library="default.py" />
+    <extension point="xbmc.service" library="starter.py" start="startup">
+    </extension>
+
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">Fetch todays TVShows from www.Wunschliste.de</summary>
+        <summary lang="de">Holt die Seriensendetermine von www.Wunschliste.de</summary>
+        <language>de</language>
+        <description lang="en">Fetch todays TVShows from www.Wunschliste.de</description>
+        <description lang="de">Holt die Seriensendetermine von www.Wunschliste.de[CR]Dieses Plugin benoetigt eine Skin-Integration![CR]Dank an tdoe und BJ1 für ihre Tatkräftige Unterstützung</description>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <source>https://github.com/sveni-lee/plugin.program.serienplaner</source>
+        <forum>http://</forum>
+        <email>-</email>
+        <website>-</website>
+        <assets>
+		   <icon>resources/icon.png</icon>
+		   <fanart>resources/fanart.jpg</fanart>
+            <screenshot>resources/screenshots/screenshot-01.jpg</screenshot>
+            <screenshot>resources/screenshots/screenshot-02.jpg</screenshot>
+            <screenshot>resources/screenshots/screenshot-03.jpg</screenshot>
+        </assets>
+    </extension>
+</addon>

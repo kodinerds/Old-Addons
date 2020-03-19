@@ -1,0 +1,67 @@
+<!-- German Language File -->
+
+<strings>
+    <string id="30010">SerienPlaner</string>
+    <string id="30011">Serienplaner Rubrik</string>
+    <string id="30018">Lade Infos</string>
+
+    <string id="30100">SerienPlaner Information zur Sendung</string>
+    <string id="30101">Genre:</string>
+    <string id="30102">Rating:</string>
+    <string id="30103">Beschreibung:</string>
+    <string id="30104">Serienplaner</string>
+    <string id="30105">Rubriken</string>
+    <string id="30106">Dienst gestartet</string>
+    <string id="30107">Umschalttimer setzen</string>
+    <string id="30108">Jetzt umschalten</string>
+    <string id="30109">aktualisiere Vorschau</string>
+    <string id="30119">Abbrechen</string>
+
+    <string id="30110">Allgemein</string>
+    <string id="30112">nur bei aktiviertem PVR-Client</string>
+    <string id="30113">Bevorzuge HD Sendungen</string>
+    <string id="30114">Info bei Systemstart und Refresh</string>
+    <string id="30115">Anzahl max. Einträge pro Rubrik</string>
+    <string id="30116">voreingestellte Rubriken</string>
+    <string id="30117">Laufzeit:</string>
+
+    <string id="30120">Internationale Serien</string>
+    <string id="30121">Deutsche Serien</string>
+    <string id="30122">Klassiker</string>
+    <string id="30123">Soap</string>
+
+    <string id="30132">nur Erstausstrahlungen</string>
+    <string id="30133">Nur Serien aus der Datenbank</string>
+    <string id="30134">Episode nicht in DB</string>
+
+    <string id="30126">Anzahl Tage Vorschau</string>
+    <string id="30127">Aktualisierungsintervall Inhalte</string>
+    <string id="30128">Aktualisierungsintervall Anzeige</string>
+    <string id="30129">TV Digital Website nicht erreichbar</string>
+
+    <string id="30130">Der Aktualisierungszyklus für den Inhalt muss größer sein als der Aktualisierungszyklus für die Anzeige (empfohlen 120/5).</string>
+    <string id="30131">Scraper zeitverzögert starten</string>
+
+
+    <string id="30150">0 (aus)</string>
+    <string id="30151">5 min</string>
+    <string id="30152">10 min</string>
+    <string id="30153">15 min</string>
+    <string id="30154">30 min</string>
+    <string id="30155">45 min</string>
+    <string id="30156">60 min</string>
+    <string id="30157">90 min</string>
+    <string id="30158">120 min</string>
+    <string id="30159">150 min</string>
+    <string id="30160">180 min</string>
+    <string id="30161">210 min</string>
+    <string id="30162">240 min</string>
+    <string id="30163">720 min</string>
+    <string id="30164">1440 min</string>
+
+    <string id="30170">5 sec</string>
+    <string id="30171">10 sec</string>
+    <string id="30172">15 sec</string>
+    <string id="30173">30 sec</string>
+</strings>
+

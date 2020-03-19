@@ -1,0 +1,511 @@
+# XBMC Media Center language file
+# Addon Name: NewsCenter
+# Addon id: plugin.program.newscenter
+# Addon version: 0.0.2
+# Addon Provider: Tdoe
+msgid ""
+msgstr ""
+"Project-Id-Version: XBMC Addons\n"
+"Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Kodi Translation Team\n"
+"Language-Team: German (http://www.transifex.com/projects/p/xbmc-addons/language/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgctxt "Addon Summary"
+msgid "NewsCenter Plugin for Germany"
+msgstr "NewsCenter Plugin for Germany"
+
+msgctxt "Addon Description"
+msgid "Plugin is for Skinners to integrate a newscenter. Which contains a widget with rss news and multiple direct URLs provided as Property to watch directly Tagesschau, Tagesschau in 100s, Wettervorhersagevideo, Wetter in 60s. Auch die aktuelle Tabelle der 1. und 2. Bundesliga kann angezeigt werden."
+msgidr "Plugin is for Skinners to integrate a newscenter. Which contains a widget with rss news and multiple direct URLs provided as Property to watch directly Tagesschau, Tagesschau in 100s, Wettervorhersagevideo, Wetter in 60s. Auch die aktuelle Tabelle der 1. und 2. Bundesliga kann angezeigt werden."
+
+msgctxt "#30010"
+msgid "NewsCenter"
+msgstr "NewsCenter"
+
+msgctxt "#30011"
+msgid "NewsCenter Widget Rubrik"
+msgstr "NewsCenter Widget Rubrik"
+
+msgctxt "#30078"
+msgid "Aktuelle, unabhängige Weltnachrichten von Europas führendem Nachrichtensender."
+msgstr "Aktuelle, unabhängige Weltnachrichten von Europas führendem Nachrichtensender."
+
+msgctxt "#30079"
+msgid "Nachrichten seriös, schnell und kompetent. Nachrichten aus Politik, Wirtschaft, Börse, Sport."
+msgstr "Nachrichten seriös, schnell und kompetent. Nachrichten aus Politik, Wirtschaft, Börse, Sport."
+
+msgctxt "#30080"
+msgid "N24 - Deutschlands führender Nachrichtensender - Nachrichten - Sport - Wissen - Dokumentationen."
+msgstr "N24 - Deutschlands führender Nachrichtensender - Nachrichten - Sport - Wissen - Dokumentationen."
+
+msgctxt "#30081"
+msgid "tagesschau24.de bietet Ihnen eine Übersicht über das Programm des Senders der ARD."
+msgstr "tagesschau24.de bietet Ihnen eine Übersicht über das Programm des Senders der ARD."
+
+msgctxt "#30082"
+msgid "Ereignis- und Dokumentationskanal der öffentlich-rechtlichen Sendeanstalten."
+msgstr "Ereignis- und Dokumentationskanal der öffentlich-rechtlichen Sendeanstalten."
+
+msgctxt "#30083"
+msgid "Die Deutsche Welle ist der staatliche Auslandsrundfunk der Bundesrepublik Deutschland und Mitglied der ARD."
+msgstr "Die Deutsche Welle ist der staatliche Auslandsrundfunk der Bundesrepublik Deutschland und Mitglied der ARD."
+
+msgctxt "#30084"
+msgid "Livestream Deutsche Welle"
+msgstr "Livestream Deutsche Welle"
+
+msgctxt "#30085"
+msgid "Livestream Phoenix"
+msgstr "Livestream Phoenix"
+
+msgctxt "#30086"
+msgid "Livestream Tagesschau 24"
+msgstr "Livestream Tagesschau 24"
+
+msgctxt "#30087"
+msgid "Livestream N24"
+msgstr "Livestream N24"
+
+msgctxt "#30088"
+msgid "Livestream N-TV"
+msgstr "Livestream N-TV"
+
+msgctxt "#30089"
+msgid "Livestream Euronews"
+msgstr "Livestream Euronews"
+
+msgctxt "#30090"
+msgid "Nachrichten Livestreams"
+msgstr "Nachrichten Livestreams"
+
+msgctxt "#30091"
+msgid "Nächste Spiele 1.Liga"
+msgstr "Nächste Spiele 1.Liga"
+
+msgctxt "#30092"
+msgid "Nächste Spiele 2.Liga"
+msgstr "Nächste Spiele 2.Liga"
+
+msgctxt "#30093"
+msgid "Bundesland Wetterkarten"
+msgstr "Bundesland Wetterkarten"
+
+msgctxt "#30094"
+msgid "Rundschau in 100 Sekunden"
+msgstr "Rundschau in 100 Sekunden"
+
+msgctxt "#30095"
+msgid "Rundschau 100"
+msgstr "Rundschau 100"
+
+msgctxt "#30096"
+msgid "Die Nachrichtensendung vom NDR"
+msgstr "Die Nachrichtensendung vom NDR"
+
+msgctxt "#30097"
+msgid "NDR Aktuell - Kompakt"
+msgstr "NDR Aktuell - Kompakt"
+
+msgctxt "#30098"
+msgid "Die Videos von wetter.net erklären das Wettergeschehen"
+msgstr "Die Videos von wetter.net erklären das Wettergeschehen"
+
+msgctxt "#30099"
+msgid "wetter.net - Wetter"
+msgstr "wetter.net - Wetter"
+
+msgctxt "#30100"
+msgid "Legende"
+msgstr "Legende"
+
+msgctxt "#30101"
+msgid "Kein Pollenflug"
+msgstr "Kein Pollenflug"
+
+msgctxt "#30102"
+msgid "Wenig Pollenflug"
+msgstr "Wenig Pollenflug"
+
+msgctxt "#30103"
+msgid "Mäßiger Pollenflug"
+msgstr "Mäßiger Pollenflug"
+
+msgctxt "#30104"
+msgid "Starker Pollenflug"
+msgstr "Starker Pollenflug"
+
+msgctxt "#30105"
+msgid "Pollenbelastung"
+msgstr "Pollenbelastung"
+
+msgctxt "#30106"
+msgid "Dienst gestartet"
+msgstr "Dienst gestartet"
+
+msgctxt "#30107"
+msgid "Wetterwarnung"
+msgstr "Wetterwarnung"
+
+msgctxt "#30108"
+msgid "Aktualisiere NewsCenter Daten"
+msgstr "Aktualisiere NewsCenter Daten"
+
+msgctxt "#30109"
+msgid "Deutschland Wetterkarten"
+msgstr "Deutschland Wetterkarten"
+
+msgctxt "#30110"
+msgid "Allgemein"
+msgstr "Allgemein"
+
+msgctxt "#30111"
+msgid "Bundesliga News"
+msgstr "Bundesliga News"
+
+msgctxt "#30112"
+msgid "News Feed Auswahl"
+msgstr "News Feed Auswahl"
+
+msgctxt "#30113"
+msgid "Nachrichten Videos"
+msgstr "Nachrichten Videos"
+
+msgctxt "#30114"
+msgid "Info bei Systemstart und Refresh"
+msgstr "Info bei Systemstart und Refresh"
+
+msgctxt "#30121"
+msgid "Der Tagesschau-Nachrichtenüberblick in 100 Sekunden als Video-Podcast"
+msgstr "Der Tagesschau-Nachrichtenüberblick in 100 Sekunden als Video-Podcast"
+
+msgctxt "#30122"
+msgid "Die Nachrichtensendung im Ersten"
+msgstr "Die Nachrichtensendung im Ersten"
+
+msgctxt "#30123"
+msgid "Tagesschau"
+msgstr "Tagesschau"
+
+msgctxt "#30124"
+msgid "Die Videos von wetter.info erklären das Wettergeschehen"
+msgstr "Die Videos von wetter.info erklären das Wettergeschehen"
+
+msgctxt "#30125"
+msgid "1.Liga Spielplan"
+msgstr "1.Liga Spielplan"
+
+msgctxt "#30126"
+msgid "2.Liga Spielplan"
+msgstr "2.Liga Spielplan"
+
+msgctxt "#30127"
+msgid "Aktualisierungsinterval Content"
+msgstr "Aktualisierungsinterval Content"
+
+msgctxt "#30128"
+msgid "1.Liga Tabelle"
+msgstr "1.Liga Tabelle"
+
+msgctxt "#30129"
+msgid "2.Liga Tabelle"
+msgstr "2.Liga Tabelle"
+
+msgctxt "#30130"
+msgid "In komprimierter Fassung von anderthalb Minuten informieren wir Sie über die aktuellen Nachrichten des Tages."
+msgstr "In komprimierter Fassung von anderthalb Minuten informieren wir Sie über die aktuellen Nachrichten des Tages."
+
+msgctxt "#30131"
+msgid "Tagesschau in 100s"
+msgstr "Tagesschau in 100s"
+
+msgctxt "#30132"
+msgid "Du willst wissen, was in der Welt los ist? Dann: Hallo bei logo! - deinen Kindernachrichten bei KiKA."
+msgstr "Du willst wissen, was in der Welt los ist? Dann: Hallo bei logo! - deinen Kindernachrichten bei KiKA."
+
+msgctxt "#30133"
+msgid "Aktuelles Wetter von tagesschau.de"
+msgstr "Aktuelles Wetter von tagesschau.de"
+
+msgctxt "#30134"
+msgid "Wetter in 60 Sekunden von Wetteronline"
+msgstr "Wetter in 60 Sekunden von Wetteronline"
+
+msgctxt "#30135"
+msgid "In komprimierter Fassung von 100 Sekunden informieren wir Sie über die aktuellen Nachrichten des Tages."
+msgstr "In komprimierter Fassung von 100 Sekunden informieren wir Sie über die aktuellen Nachrichten des Tages."
+
+msgctxt "#30136"
+msgid "MDR Aktuell"
+msgstr "MDR Aktuell"
+
+msgctxt "#30137"
+msgid "Tagesschau"
+msgstr "Tagesschau"
+
+msgctxt "#30138"
+msgid "Tivi Kindernachrichten"
+msgstr "Tivi Kindernachrichten"
+
+msgctxt "#30139"
+msgid "Wetter in 60s"
+msgstr "Wetter in 60s"
+
+msgctxt "#30140"
+msgid "Tagesschau.de - Wetter"
+msgstr "Tagesschau.de - Wetter"
+
+msgctxt "#30141"
+msgid "wetter.info - Wetter"
+msgstr "wetter.info - Wetter"
+
+msgctxt "#30142"
+msgid "Platz"
+msgstr "Platz"
+
+msgctxt "#30143"
+msgid "Verein"
+msgstr "Verein"
+
+msgctxt "#30144"
+msgid "Spiele"
+msgstr "Spiele"
+
+msgctxt "#30145"
+msgid "G  U  V"
+msgstr "G  U  V"
+
+msgctxt "#30146"
+msgid "Tore"
+msgstr "Tore"
+
+msgctxt "#30147"
+msgid "Punkte"
+msgstr "Punkte"
+
+msgctxt "#30148"
+msgid "Statistik"
+msgstr "Statistik"
+
+msgctxt "#30149"
+msgid "Bitte PLZ in den Einstellungen festlegen"
+msgstr "Bitte PLZ in den Einstellungen festlegen"
+
+msgctxt "#30150"
+msgid "Update Latest News Feed - Dieser Vorgang kann etwas dauern... bitte Geduld."
+msgstr "Update Latest News Feed - Dieser Vorgang kann etwas dauern... bitte Geduld."
+
+msgctxt "#30151"
+msgid "Unwetterkarte von"
+msgstr "Unwetterkarte von"
+
+msgctxt "#30152"
+msgid "Unwetterkarte von Deutschland"
+msgstr "Unwetterkarte von Deutschland"
+
+msgctxt "#30153"
+msgid "Sport Auswahl"
+msgstr "Sport Auswahl"
+
+msgctxt "#30154"
+msgid "News Auswahl"
+msgstr "News Auswahl"
+
+msgctxt "#30155"
+msgid "Default News Auswahl"
+msgstr "Default News Auswahl"
+
+msgctxt "#30156"
+msgid "Wettervorhersage Heute"
+msgstr "Wettervorhersage Heute"
+
+msgctxt "#30157"
+msgid "Wettervorhersage Heute Nacht"
+msgstr "Wettervorhersage Heute Nacht"
+
+msgctxt "#30158"
+msgid "Wettervorhersage Morgen"
+msgstr "Wettervorhersage Morgen"
+
+msgctxt "#30159"
+msgid "Wind Heute"
+msgstr "Wind Heute"
+
+msgctxt "#30160"
+msgid "Wind Heute Nacht"
+msgstr "Wind Heute Nacht"
+
+msgctxt "#30161"
+msgid "Wind Morgen"
+msgstr "Wind Morgen"
+
+msgctxt "#30162"
+msgid "Temperaturen Heute"
+msgstr "Temperaturen Heute"
+
+msgctxt "#30163"
+msgid "Temperaturen Heute Nacht"
+msgstr "Temperaturen Heute Nacht"
+
+msgctxt "#30164"
+msgid "Temperaturen Morgen"
+msgstr "Temperaturen Morgen"
+
+msgctxt "#30165"
+msgid "Regen Heute"
+msgstr "Regen Heute"
+
+msgctxt "#30166"
+msgid "Regen Heute Nacht"
+msgstr "Regen Heute Nacht"
+
+msgctxt "#30167"
+msgid "Regen Morgen"
+msgstr "Regen Morgen"
+
+
+msgctxt "#30168"
+msgid "Zeige Tagesschau"
+msgstr "Zeige Tagesschau"
+
+msgctxt "#30169"
+msgid "Zeige Tagesschau in 100s"
+msgstr "Zeige Tagesschau in 100s"
+
+msgctxt "#30170"
+msgid "Zeige MDR Aktuell 130s"
+msgstr "Zeige MDR Aktuell 130s"
+
+msgctxt "#30171"
+msgid "Zeige NDR kompakt"
+msgstr "Zeige NDR kompakt"
+
+msgctxt "#30172"
+msgid "Zeige BR Rundschau in 100s"
+msgstr "Zeige BR Rundschau in 100s"
+
+msgctxt "#30173"
+msgid "Zeige Logo Kinder Nachrichten"
+msgstr "Zeige Logo Kinder Nachrichten"
+
+msgctxt "#30174"
+msgid "Zeige Tagesschau Wetternews"
+msgstr "Zeige Tagesschau Wetternews"
+
+msgctxt "#30175"
+msgid "Zeige Wetter in 60s"
+msgstr "Zeige Wetter in 60s"
+
+msgctxt "#30176"
+msgid "Zeige Wettersendung von Meteogroup"
+msgstr "Zeige Wettersendung von Meteogroup"
+
+msgctxt "#30177"
+msgid "Zeige Wettersendung von wetter.net"
+msgstr "Zeige Wettersendung von wetter.net"
+
+msgctxt "#30178"
+msgid "Nachrichtensendungen"
+msgstr "Nachrichtensendungen"
+
+msgctxt "#30179"
+msgid "Wettersendungen"
+msgstr "Wettersendungen"
+
+msgctxt "#30180"
+msgid "PLZ"
+msgstr "PLZ"
+
+msgctxt "#30181"
+msgid "Aktueller Default Feed"
+msgstr "Aktueller Default Feed"
+
+msgctxt "#30182"
+msgid "Zeige Unwetter Warn Symbol"
+msgstr "Zeige Unwetter Warn Symbol"
+
+
+
+
+msgctxt "#30190"
+msgid "Livestream Auswahl"
+msgstr "Livestream Auswahl"
+
+msgctxt "#30191"
+msgid "Tagesschau 24"
+msgstr "Tagesschau 24"
+
+msgctxt "#30192"
+msgid "Euronews"
+msgstr "Euronews"
+
+msgctxt "#30193"
+msgid "ntv"
+msgstr "ntv"
+
+msgctxt "#30194"
+msgid "n24"
+msgstr "n24"
+
+msgctxt "#30195"
+msgid "Phoenix"
+msgstr "Phoenix"
+
+msgctxt "#30196"
+msgid "Deutsche Welle"
+msgstr "Deutsche Welle"
+
+
+msgctxt "#30197"
+msgid "Bundesliga Nächste Spiele"
+msgstr "Bundesliga Nächste Spiele"
+
+msgctxt "#30198"
+msgid "Nächste Spiele in der"
+msgstr "Nächste Spiele in der"
+
+msgctxt "#30199"
+msgid "Bundesliga"
+msgstr "Bundesliga"
+
+msgctxt "#30200"
+msgid "Bundesliga Tabelle"
+msgstr "Bundesliga Tabelle"
+
+msgctxt "#30201"
+msgid "Tabelle der"
+msgstr "Tabelle der"
+
+msgctxt "#30202"
+msgid "Bundesliga Aktueller Spieltag"
+msgstr "Bundesliga Aktueller Spieltag"
+
+msgctxt "#30203"
+msgid "Ergebnisse der"
+msgstr "Ergebnisse der"
+
+
+msgctxt "#30204"
+msgid "Unwetterwarnungen"
+msgstr "Unwetterwarnungen"
+
+msgctxt "#30205"
+msgid "Unwetterwarnungen für"
+msgstr "Unwetterwarnungen für"
+
+msgctxt "#30206"
+msgid "Warnung vor"
+msgstr "Warnung vor"
+
+
+msgctxt "#30207"
+msgid "Wetterkarten"
+msgstr "Wetterkarten"
+
+

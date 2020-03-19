@@ -1,0 +1,74 @@
+[{
+	"name": "Spiegel Online",
+	"url": "http://www.spiegel.de/schlagzeilen/tops/index.rss",
+        "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Spiegel-Online-Logo.svg/320px-Spiegel-Online-Logo.svg.png"
+}, {
+        "name": "n-tv",
+        "url": "http://www.n-tv.de/rss",
+        "pic": "https://upload.wikimedia.org/wikipedia/de/a/ad/N-tv-emblem-2009.jpg"
+}, {
+        "name": "tagesschau.de",
+        "url": "http://www.tagesschau.de/xml/rss2",
+        "pic": "http://www.tagesschau.de/resources/framework/img/ts_printlogo.png"
+}, {
+	"name": "n24",
+	"url": "http://feeds.n24.de/n24/homepage?format=xml",
+        "pic": "http://www.dwdl.de/images/1284455138.jpg"
+
+}, {
+        "name": "Heise Online",
+        "url": "http://heise.de.feedsportal.com/c/35207/f/653902/index.rss",
+        "pic": "http://www.heise.de/icons/ho/heise_online_logo_top.gif"
+
+}, {
+        "name": "Google News",
+        "url": "http://news.google.com/news?cf=all&hl=de&pz=1&ned=de&output=rss",
+        "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Google-News_logo.png/320px-Google-News_logo.png"
+
+}, {
+        "name": "FOCUS-Online",
+        "url": "http://rss2.focus.de/c/32191/f/443312/index.rss",
+        "pic": "http://p5.focus.de/fol/pics/fol/logo_125x40.png"
+
+}, {
+        "name": "Die Welt",
+        "url": "http://www.welt.de/?service=Rss",
+        "pic": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b3/Die_Welt_Logo.svg/320px-Die_Welt_Logo.svg.png"
+
+}, {
+        "name": "Sport 1",
+        "url": "http://www.sport1.de/news.rss",
+        "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Logo_Sport1_2013.svg/270px-Logo_Sport1_2013.svg.png"
+
+}, {
+        "name": "LAOLA1",
+        "url": "http://www.laola1.at/templates/generated/1/xml/rss/newsRSS.xml",
+        "pic": "http://lhockey.com/wp-content/logos/laola1tv.png"
+
+}, {    
+        "name": "Golem",
+        "url": "http://golem.de.dynamic.feedsportal.com/pf/578068/http://rss.golem.de/rss.php?feed=RSS2.0",
+        "pic": "http://www.golem.de/staticrl/images/golem-rss.png"
+
+}, {    
+        "name": "Netzpolitik",
+        "url": "https://netzpolitik.org/feed",
+        "pic": "https://www.tagesschau.de/multimedia/bilder/netzpolitik-111~_v-modPremium.jpg"
+
+}, {    
+        "name": "Deutsche Wirtschafts Nachrichten",
+        "url": "http://deutsche-wirtschafts-nachrichten.de/feed/",
+        "pic": "http://deutsche-wirtschafts-nachrichten.de/wp-content/themes/blogform/images/logo_deutsche-wirtschafts-nachrichten.png"
+
+}, {
+        "name": "Kodinerds.net",
+        "url": "http://www.kodinerds.net/index.php/BoardFeed/?at=30575-8e710f12c83d6c7f66184ca3354f2c83baf4bbed",
+        "pic": "http://www.kodinerds.net/images/wbbLogo.png"
+
+}, {
+        "name": "Kachelmann Wetter",
+        "url": "http://wetterkanal.kachelmannwetter.com/feed/",
+        "pic": "http://wetterkanal.kachelmannwetter.com/wp-content/uploads/2015/11/Logo_v2-150px1-e1447078300181.png"
+
+}
+]

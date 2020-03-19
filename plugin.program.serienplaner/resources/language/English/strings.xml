@@ -1,0 +1,68 @@
+
+<!-- English Language File -->
+
+<strings>
+    <string id="30010">TVShow Scheduler</string>
+    <string id="30011">TvShow Scheduler Rubric</string>
+    <string id="30018">Load Infos</string>
+
+    <string id="30100">Information for TVShow</string>
+    <string id="30101">Genre:</string>
+    <string id="30102">Rating:</string>
+    <string id="30103">Description:</string>
+    <string id="30104">-</string>
+    <string id="30105">Rubrics</string>
+    <string id="30106">Service started</string>
+    <string id="30107">Set Watchtimer</string>
+    <string id="30108">Switch Now</string>
+    <string id="30109">refresh Infos</string>
+    <string id="30119">Cancel</string>
+
+    <string id="30110">General</string>
+	<string id="30112">PVR-Client is required</string>
+    <string id="30113">Prefer HD Content</string>
+    <string id="30114">Info by Systemboot und Refresh</string>
+    <string id="30115">Counts per Rubric</string>
+    <string id="30116">default Rubrics</string>
+    <string id="30117">Runtime:</string>
+
+    <string id="30120">International TVShows</string>
+    <string id="30121">German TVShows</string>
+    <string id="30122">Classics</string>
+    <string id="30123">Soap</string>
+
+    <string id="30132">Firstaired Only</string>
+    <string id="30133">TVShows from DB Only</string>
+    <string is="30134">Episode not in DB</string>
+
+    <string id="30126">Advanced Days</string>
+    <string id="30127">Content Refresh</string>
+    <string id="30128">Screen Refresh</string>
+    <string id="30129">TVShow Scheduler not available</string>
+
+    <string id="30130">Content Refrech higher than Scren Refresh (recommendet 480/5).</string>
+    <string id="30131">Scraper delay</string>
+
+
+    <string id="30150">0 (off)</string>
+    <string id="30151">5 min</string>
+    <string id="30152">10 min</string>
+    <string id="30153">15 min</string>
+    <string id="30154">30 min</string>
+    <string id="30155">45 min</string>
+    <string id="30156">60 min</string>
+    <string id="30157">90 min</string>
+    <string id="30158">120 min</string>
+    <string id="30159">150 min</string>
+    <string id="30160">180 min</string>
+    <string id="30161">210 min</string>
+    <string id="30162">240 min</string>
+    <string id="30163">720 min</string>
+    <string id="30164">1440 min</string>
+
+    <string id="30170">5 sec</string>
+    <string id="30171">10 sec</string>
+    <string id="30172">15 sec</string>
+    <string id="30173">30 sec</string>
+</strings>
+

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+  <category label="Settings">
+      <setting id="username" type="text" label="Benutzername" default="" />
+      <setting id="password" type="text" option="hidden" label="Passwort" default="" />
+      <setting id="host" type="ipaddress" label="IP" default="127.0.0.1" />
+      <setting id="port" type="number" label="Port" default="9001" />
+      <setting id="playlist_path" type="folder" label="Pfad zur M3U Playliste" default="special://profile/" />
+  </category>
+</settings>

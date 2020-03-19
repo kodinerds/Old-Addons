@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+    <category label="General">
+		<setting label="Receiver" type="lsep"/>
+		<setting label="Send via Local Network (Wifi Service)" type="lsep"/>
+		<setting label="Local IP Address" type="ipaddress" id="ipaddress" default="192.168.178.24"/>
+		<setting label="Local Port" id="localport" type="select" values="1817|1818"  default="1817"/>
+		<setting label="Send via Internet" type="lsep"/>
+        <setting label="Public Key" type="text"   id="key" default=""/>
+        <setting label="Sender" type="lsep"/>
+		<setting label="Local Network only" type="bool" id="localnet" default="false"/>
+    </category>
+	<category label="Message">
+		<setting label="Message (no additional user input)" type="lsep"/>
+		<setting label="Message" type="text"   id="message" default="test"/>
+		<setting label="Message (with additional user input)" type="lsep"/>
+		<setting label="Message" type="text"   id="messagewheninput" default="test"/>
+		<setting label="Splitter between Message and Input" type="text" id="splitter" subsetting="true" default="=:="/>
+    </category>
+	<category label="Optional">
+		<setting label="Optional Message Settings" type="lsep"/>
+        <setting label="Sender" type="text" id="sender" default="Kodi"/>		
+        <setting label="Message validity time in seconds" type="number"   id="ttl" default="90000"/>
+		<setting label="Password" type="text"   id="password" option="hidden" default=""/>
+		<setting label="Message Group" type="text"   id="group" default=""/>
+		<setting label="Target" type="text"   id="target" default=""/>
+	</category>
+</settings>

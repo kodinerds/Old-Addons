@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<addon id="context.serieninfos" name="Serien Infos" version="1.0.2" provider-name="L0RE">
+	<requires>
+		<import addon="xbmc.python" version="2.24.0"/>
+		<import addon="script.module.requests" version="2.12.4"/>
+		<import addon="script.common.plugin.cache" version="2.5.5" optional="true"/> # Add this
+		<import addon="script.module.pyxbmct" version="1.2.0"/>
+	</requires>
+	<extension point="kodi.context.item" library="addon.py">
+		<item>
+			<label>[B]Serien INFOS[/B]</label>
+			<visible>Window.IsActive(10025)+!Container.Content(Addons)+!Container.Content(images)+!Container.Content(movies)+!Container.Content(songs)</visible>            
+		</item>
+	</extension>
+	<extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="de">Serien Daten</summary>
+		<summary lang="en">Series Data</summary>
+		<description lang="de">Serien-Informationen von TheMovie-DB abrufen. Erschienene und ausstehende Staffeln und Folgen zu der abgefragten Serie, Abgleich mit der Medien-Bibliothek auf dem vorhandenen System.</description>
+		<description lang="en">Get Series-Information from TheMovie-DB. Released and outstanding Seasons and Episodes to the queried series, comparison with the Medialibrary on existing system.</description>
+		<language></language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+		<forum>https://www.kodinerds.net/index.php/Thread/55451-L0REs-Blog/</forum>
+		<website></website>
+		<email></email>
+		<source>https://github.com/kodinerds/repo/tree/master/context.serieninfos</source>
+		<assets>
+			<icon>icon.png</icon>
+		</assets>
+		<news>[B][COLOR orangered]Version 1.0.2  (30.12.2018)[/COLOR][/B] by realvito[CR]
+- fixed: Manche Serie wird nicht angezeigt, obwohl Suchergebnis vorhanden ist (Verursacher im Script entfernt)
+- fixed: Es wird kein Ergebnis angezeigt, da die Webseite im Cache fehlerhaft oder leer ist (nochmalige direkte Abfrage der Webseite - ohne Cache)
+		</news>
+	</extension>
+</addon>

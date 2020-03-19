@@ -1,0 +1,92 @@
+Beschreibung:
+=============
+
+Das Plugin plugin.program.serienplaner holt von www.wunschliste.de die Seriensendetermine des Tages und stellt diese dann als 
+RecentlyAdded Widget beim Menüpunkt TV bereit (nach Skintegration). Der Scraper kann so eingestellt werden das Sendetermine bis 
+zu 15 tagen im voraus geholt werden.
+Wahlweise kann eingestellt werden, dasss nur Sender aus dem PVR-Clienten berücksichtigt werden oder eben alle.
+Desweiteren besteht eine integration des Dienstes service.kn.switchtimer in der Sendungs-Detailansicht mit 
+welchem die Highlights zum umschalten vorgemerkt werden können.
+
+Im Settingsmenü kann eingestellt werden welche Kategorie für die Anzeige und Aktualisierung verwendet werden soll.
+Zur Auswahl stehen hier folgende Kategorien:
+  * International
+  * German
+  * Classics
+  * Soaps
+
+Das Plugin wird bei jedem Kodi Start ausgefüht und aktualisiert die Daten. Je nachdem welches Interval man für Content Refresh eingestellt hat geht es in eine Loop 
+und aktualisiert die Seriensendetermine anhand der eingestellten Minuten. Ist hier die "0" ausgewählt, beendet sich der Dienst, ohne Daten abzurufen. Die Anzeige Aktualisierung kann hier seperat eingestellt werden.
+
+
+
+
+Einstellungen:
+==============
+
+Auch die Popup Nachricht beim Start von kodi und dem Content-Refresh kann aktiviert/deaktiviert werden.
+
+Um das Plugin nutzen zu können erfordert es einer Skin Integration. Siehe hierzu die Readme.txt im Ordner "integration"
+hierfür werden zwei Möglichkeiten angeboten.
+
+
+"alte" Methode:
+----------------
+hierbei müssen die Item einzeln angelegt werden...
+bisher stehen folgende Items zur Verfügung:
+
+$INFO[Window.Property(SerienPlaner.1.TVShow)]
+$INFO[Window.Property(SerienPlaner.1.Staffel)]
+$INFO[Window.Property(SerienPlaner.1.Episode)]
+$INFO[Window.Property(SerienPlaner.1.Title)]
+$INFO[Window.Property(SerienPlaner.1.Starttime)]
+$INFO[Window.Property(SerienPlaner.1.Datum)]
+$INFO[Window.Property(SerienPlaner.1.neueEpisode)]
+$INFO[Window.Property(SerienPlaner.1.Channel)]
+$INFO[Window.Property(SerienPlaner.1.Logo)]
+$INFO[Window.Property(SerienPlaner.1.PVRID)]
+$INFO[Window.Property(SerienPlaner.1.Description)]
+$INFO[Window.Property(SerienPlaner.1.Rating)]
+$INFO[Window.Property(SerienPlaner.1.Alterfreigabe)]
+$INFO[Window.Property(SerienPlaner.1.Genre)]
+$INFO[Window.Property(SerienPlaner.1.Studio)]
+$INFO[Window.Property(SerienPlaner.1.Status)]
+$INFO[Window.Property(SerienPlaner.1.Jahr)]
+$INFO[Window.Property(SerienPlaner.1.Thumb)]
+$INFO[Window.Property(SerienPlaner.1.FirstAired)]
+$INFO[Window.Property(SerienPlaner.1.RunningTime)]
+$INFO[Window.Property(SerienPlaner.1.Poster)]
+$INFO[Window.Property(SerienPlaner.1.Fanart)]
+$INFO[Window.Property(SerienPlaner.1.Clearlogo)]
+$INFO[Window.Property(SerienPlaner.1.WatchType)]
+
+
+
+Dynamic Content:
+----------------
+hier stehen folgende Items zur Verfügung:
+$INFO[ListItem.Label]
+$INFO[ListItem.Label2]
+$INFO[ListItem.Thumb]
+$INFO[ListItem.Season]
+$INFO[ListItem.Episode]
+$INFO[ListItem.Title]
+$INFO[ListItem.Genre]
+$INFO[ListItem.mpaa]
+$INFO[ListItem.Year]
+$INFO[ListItem.Plot]
+$INFO[ListItem.Rating]
+$INFO[ListItem.Studio]
+$INFO[ListItem.Tvshowtitle]
+$INFO[ListItem.Art(Poster)]
+$INFO[ListItem.Art(Fanart)]
+$INFO[ListItem.Art(Clearlogo)]
+$INFO[ListItem.Property(Senderlogo)]
+$INFO[ListItem.Property(Starttime)]
+$INFO[ListItem.Property(Date)]
+$INFO[ListItem.Property(RunTime)]
+$INFO[ListItem.Property(PVRID)]
+$INFO[ListItem.Property(Status)]
+$INFO[ListItem.Property(Datetime)]
+
+Aufruf dynamic content: plugin://plugin.program.serienplaner/?methode=get_item_serienplaner&amp;reload=$INFO[Window(Home).Property(SerienPlaner.Countdown)]

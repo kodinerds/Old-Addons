@@ -1,0 +1,6 @@
+0.0.1
+  - First try
+0.0.2
+  - Added option to specify IP for remote access
+0.0.3
+  - Added option to specify path of iptv_channels.m3u

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.program.fast_com" version="1.0.0" name="FAST.com" provider-name="Jin">
+    <requires>
+        <import addon="xbmc.python" version="2.24.0"/>
+    </requires>
+    <extension point="xbmc.python.script" library="addon.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Fast.com: Internet Speed Test</summary>
+        <description lang="en_GB">How fast is your download speed? In seconds, Fast.com's simple Internet speed test will estimate your ISP speed.</description>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <news>v1.0.0 (2016-09-26)
+- initial release
+        </news>
+        <forum>http://www.kodinerds.net</forum>
+        <email>[jin] at [xyz] dot [de]</email>
+    </extension>
+</addon>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<addon id="plugin.program.newscenter" name="NewsCenter" version="0.0.9" provider-name="NewsCenter">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.feedparser" version="5.1.3"/>
+	<import addon="script.module.requests" version="2.3.0" />
+    </requires>
+    <extension point="xbmc.python.script" library="default.py" />
+    <extension point="xbmc.service" library="starter.py" start="startup" />
+
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">NewsCenter Plugin for Germany</summary>
+        <language>de</language>
+        <description  lang="en">Plugin is for Skinners to integrate a newscenter. Which contains a widget with rss news and multiple direct URLs provided as Property to watch directly Tagesschau, Tagesschau in 100s, Wettervorhersagevideo, Wetter in 60s. Auch die aktuelle Tabelle der 1. und 2. Bundesliga kann angezeigt werden.
+</description>
+        <description  lang="de">Dieses Plugin benötigt eine Skin Integration! Mit diesem Plugin können Nachrichten RSS als Widget erstellt werden. Zusätzlich erstellt das Plugin direktlinks zu:
+Tagesschau
+Tagesschau in 100 Sekunden
+Kinder Nachrichten Logo
+Wetter in 60 Sekunden
+Wettervorhersage von Meteogroup.
+Auch die aktuelle Tabelle der 1. und 2. Bundesliga kann angezeigt werden.
+</description>
+	<website>-</website>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <source>https://github.com/tobias-d-oe/plugin.program.newscenter</source>
+        <forum>http://goo.gl/fdU042</forum>
+        <email>-</email>
+        <website>-</website>
+    </extension>
+</addon>
