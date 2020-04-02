@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>    
+	<setting id="source" label="32113" type="enum" lvalues="32115|32116"/>
+    <setting id="path" label="32117" type="folder"  source="auto" visible="eq(-1,1)"/>
+    <setting id="scrollspeed" label="32111" type="slider" default="60" range="10,10,100" option="int" />
+    <setting id="refresh" label="32112" type="slider" default="60" range="10,10,320" option="int" />
+    <setting id="DimEnabled" label="32110" type="bool" default="false"/>
+    <setting id="DimTimer" label="32118" type="slider" default="1" range="1,1,5" option="int" visible="eq(-1,true)"/>
+    <setting id="DimLevel" label="32119" type="slider" default="70" range="10,10,100" option="int" visible="eq(-2,true)"/>
+</settings>

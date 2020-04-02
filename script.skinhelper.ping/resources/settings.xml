@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<settings>
+  
+    <category label="32002">
+ 		<setting id="name1" visible="true" enable="true" type="text" label="32007" default=""/>
+		<setting id="ip1" visible="true" enable="true" type="ipaddress" label="32008" default=""/>
+		<setting id="mac1" visible="true" enable="true" type="text" label="32009" default=""/>
+	</category>
+
+    <category label="32003">
+		<setting id="name2" visible="true" enable="true" type="text" label="32007" default=""/>
+		<setting id="ip2" visible="true" enable="true" type="ipaddress" label="32008" default=""/>
+		<setting id="mac2" visible="true" enable="true" type="text" label="32009" default=""/>
+	</category>
+
+    <category label="32004">
+		<setting id="name3" visible="true" enable="true" type="text" label="32007" default=""/>
+		<setting id="ip3" visible="true" enable="true" type="ipaddress" label="32008" default=""/>
+		<setting id="mac3" visible="true" enable="true" type="text" label="32009" default=""/>
+	</category>
+
+    <category label="32005">
+		<setting id="name4" visible="true" enable="true" type="text" label="32007" default=""/>
+		<setting id="ip4" visible="true" enable="true" type="ipaddress" label="32008" default="" />
+		<setting id="mac4" visible="true" enable="true" type="text" label="32009" default="" />
+	</category>
+
+    <category label="32006">
+		<setting id="name5" visible="true" enable="true" type="text" label="32007" default=""/>
+		<setting id="ip5" visible="true" enable="true" type="ipaddress" label="32008" default="" />
+		<setting id="mac5" visible="true" enable="true" type="text" label="32009" default="" />
+	</category>	
+</settings>

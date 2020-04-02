@@ -1,0 +1,33 @@
+1.3.1
+- fixed anime abc
+- requests version update to 2.3.0
+1.3.0
+- added torrent support - requires xbmctorrent video addon
+- amv download with requests2 - simple downloader removed
+- your amv's needs to be redownloaded for local playing
+1.2.1
+- updated to requests2
+- fixed regex in getInfo
+1.2.0
+- added download option
+- plays local file if video exists in amv folder, do NOT change the downloaded file name
+- changed favourites to my videos - cover and info added
+- added categorie amv tv - this will play 100 videos randomly
+1.1.1
+- switched from urllib2 to requests
+- fixed amv name in categorie anime
+1.1.0
+- added subcat most popular authors and studios in ratings
+- added context menu 'more %artist%' and 'other videos by %author%' (get amv info must be selected)
+- added favourites
+1.0.0
+- added random top 10
+- added option to set low quality (default)
+- added option to get amv info in all sections - takes longer to list videos (10 seconds)
+- fixed a search bug
+0.2
+- added search and new
+- added thumb, rating, music and anime info in most sections
+0.1
+- first release
+- videos, anime, ratings, categories, competitions

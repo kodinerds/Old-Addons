@@ -1,0 +1,6 @@
+0.0.2
+- add friends
+- add screenshots
+
+0.0.1
+- add recordings

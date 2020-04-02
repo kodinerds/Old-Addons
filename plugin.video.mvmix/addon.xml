@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="plugin.video.mvmix" version="1.13.0" name="Music Video Mix" provider-name="Jin">
+    <requires>
+        <import addon="xbmc.python" version="2.20.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <news>
+- update youtube signature regex
+        </news>
+        <summary>Music Video Mix Player</summary>
+        <description>Randomly Play Local And Online Music Videos Based On The Last FM Similar Artists API</description>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <website>https://www.last.fm/</website>
+        <email>[jin] at [xyz] dot [de]</email>
+        <source>https://github.com/kodinerds/repo/tree/master/plugin.video.mvmix</source>
+    </extension>
+</addon>

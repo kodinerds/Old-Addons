@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.screensaver.fTVscreensaver" name="fTV Screensaver" version="0.1.3" provider-name="Sualfred">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>    
+    <extension point="xbmc.ui.screensaver" library="screensaver.py" />
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <language/>
+        <website></website>
+        <source>https://github.com/sualfred/script.screensaver.ftvscreensaver</source>
+        <forum>http://forum.kodi.tv/showthread.php?tid=255659</forum>
+        <email>su4lfred@gmail.com</email>   
+        <summary lang="de">fTV Mosaik Screensaver</summary>
+        <summary lang="en">fTV Mosaic Screensaver</summary>        
+        <description lang="de">Slideshow von Fanarts/Postern im fTV Style</description>
+        <description lang="en">Poster and fanart slideshow based on the fTV style</description>
+    </extension>
+</addon>

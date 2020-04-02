@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.laola1tv" version="2.2.0" name="Laola1 TV" provider-name="Jin">
+    <requires>
+        <import addon="xbmc.python" version="2.25.0"/>
+        <import addon="script.module.pydes" version="2.0.1"/>
+        <import addon="script.module.inputstreamhelper" version="0.3.3"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="startup.py" start="startup"/>
+    <extension point="xbmc.addon.metadata">
+        <reuselanguageinvoker>false</reuselanguageinvoker>
+        <news>
+- added web login as fallback
+- use inputstream adaptive for playback
+- minor updates/fixes
+        </news>
+        
+        <summary lang="de_DE">LAOLA1.tv - Das Sport-TV im Netz</summary>
+        <description lang="de_DE">Online-Videos und Video-LIVE-Streams aus der Welt des Sports.</description>
+        <disclaimer lang="de_DE">Inoffizielles Addon - Benutzung auf eigene Gefahr</disclaimer>
+        
+        <summary lang="en_GB">LAOLA1.tv - the online sports TV</summary>
+        <description lang="en_GB">Highlight-clips and video-LIVE-streams from the world of sports.</description>
+        <disclaimer lang="en_GB">Unofficial Addon - Use at your own risk</disclaimer>
+        
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <website>https://www.laola1.tv</website>
+        <email>[jin] at [xyz] dot [de]</email>
+        <source>https://github.com/kodinerds/repo/tree/master/plugin.video.laola1tv</source>
+  </extension>
+</addon>

@@ -1,0 +1,45 @@
+﻿0.3.8
+SWF Added
+0.3.7
+- Bugfix
+0.3.5
+- Bugfix
+0.3.4
+- Bugfixes
+- Optische verbesserung
+0.3.2
+- Added RBB
+0.2.5 
+- Corrected error
+0.2.4 
+- Added Hessenschau
+0.2.3
+- Added schportschau
+- Added Bayern3
+0.2.2
+- Added swr.de
+- Corrected ndr.de
+0.2.1
+- Added Hessenschau
+0.2.0
+- Addd ndr.de
+0.1.11
+- Added rbb.de
+0.1.10
+- Add Bayern Fersehen Event Stream
+0.1.9
+- Fehler bei Laufenden Spielen
+0.1.8
+- Fehlende Spalten dazu
+0.1.7
+- Neues Logo
+0.1.6
+- Monate umgestellt,da language settings bei android nicht geht
+0.1.4
+- New Url vor NDR
+0.1.3
+- Add NDR
+0.1.2
+- Patch des xml
+0.1
+- Initial

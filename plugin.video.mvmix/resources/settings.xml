@@ -1,0 +1,20 @@
+<settings>
+    <category label="General">
+        <setting id="artists_source" type="labelenum" values="Music Library|Folder" label="Local Artists" default="Music Video Library"/>
+        <setting id="artists_path" type="folder" visible="eq(-1,1)" label="Music Path"/>
+        <setting type="sep" />
+        <setting id="limit_result" type="slider" label="Limit Similar Artists Result" default="25" range="1,1,100" option="int"/>
+        <setting id="limit_tag" type="slider" label="Limit Artists By Genre" default="50" range="50,50,500" option="int"/>
+        <setting id="limit_artists" type="text" label="limit_artists" default="" visible="false"/>
+        <setting id="process" type="text" label="process" default="" visible="false"/>
+    </category>
+    <category label="Video Sources">
+        <setting id="local" type="bool" label="local" default="true"/>
+        <setting id="video_source" type="labelenum" visible="eq(-1,true)" values="Music Video Library|Folder" label="Source" default="Music Video Library"/>
+        <setting id="video_path" type="folder" visible="eq(-1,1)+eq(-2,true)" label="Music Videos Path"/>
+        <setting type="sep" />
+        <setting id="vevo" type="bool" label="vevo.com" default="true"/>
+        <setting id="imvdb" type="bool" label="imvdb.com" default="true"/>
+        <setting id="youtube" type="bool" label="youtube.com" default="true"/>
+    </category>
+</settings>

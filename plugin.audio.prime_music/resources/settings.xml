@@ -1,0 +1,33 @@
+<settings>
+    <category label="30201">
+        <setting id="siteVersion" type="enum" label="30103" values="US|UK|DE" default="2"/>
+        <setting id="quality" type="enum" label="30104" values="256kbit|128kbit|48kbit" default="0"/>
+        <setting id="forceDVDPlayer" type="bool" label="30105" default="true"/>
+        <setting id="csrf_Token" type="text" visible="false" label="csrf_Token" default=""/>
+        <setting id="csrf_rndToken" type="text" visible="false" label="csrf_rndToken" default=""/>
+        <setting id="csrf_tsToken" type="text" visible="false" label="csrf_tsToken" default=""/>
+        <setting id="customerID" type="text" visible="false" label="customerID" default=""/>
+        <setting id="email" type="text" visible="false" label="email" default=""/>
+        <setting id="password" type="text" visible="false" label="password" default=""/>
+        <setting id="req_dev_id" type="text" visible="false" label="req_dev_id" default=""/>
+        <setting id="access" type="text" visible="false" label="access" default=""/>
+    </category>
+    <category label="30121">
+        <setting id="albumDefaultView" type="text" label="30119"/>
+        <setting id="songDefaultView" type="text" label="30118"/>
+        <setting id="playlistDefaultView" type="text" label="30120"/>
+    </category>
+    <category label="30203">
+        <setting id="ssl_verif" type="bool" label="30117" default="false"/>
+        <setting label="30116" type="action" action="RunPlugin(plugin://plugin.audio.prime_music/?mode=deleteCache)"/>
+        <setting label="30115" type="action" action="RunPlugin(plugin://plugin.audio.prime_music/?mode=deleteCookies)"/>
+    </category>
+    <category label="30210">
+        <setting label="30220" type="lsep"/>
+        <setting label="30221" type="lsep"/>
+        <setting label="30222" type="lsep"/>
+        <setting id="email" type="text" visible="true" label="30211" default=""/>
+        <setting label="30212" type="action" action="RunPlugin(plugin://plugin.audio.prime_music/?mode=storePassword)"/>
+        <setting label="30213" type="action" action="RunPlugin(plugin://plugin.audio.prime_music/?mode=deletePassword)"/>
+    </category>
+</settings>

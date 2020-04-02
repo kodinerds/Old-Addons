@@ -1,0 +1,51 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: XBMC Main Translation Project (Frodo)\n"
+"Report-Msgid-Bugs-To: http://trac.xbmc.org/\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: XBMC Translation Team\n"
+"Language-Team: English (http://www.transifex.com/projects/p/XBMC-Main-Frodo/language/en/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#English
+
+msgctxt "#32002"
+msgid "Server 1"
+msgstr ""
+
+msgctxt "#32003"
+msgid "Server 2"
+msgstr ""
+
+msgctxt "#32004"
+msgid "Server 3"
+msgstr ""
+
+msgctxt "#32005"
+msgid "Server 4"
+msgstr ""
+
+msgctxt "#32006"
+msgid "Server 5"
+msgstr ""
+
+msgctxt "#32007"
+msgid "Name of Server"
+msgstr ""
+
+msgctxt "#32008"
+msgid "IP address"
+msgstr ""
+
+msgctxt "#32009"
+msgid "MAC address"
+msgstr ""
+
+
+
+

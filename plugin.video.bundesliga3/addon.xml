@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.bundesliga3" name="3. Liga" version="0.3.18" provider-name="L0RE">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="de">Livestreams der 3. Bundesliga</summary>
+        <summary lang="en">Livestreams of 3. Bundesliga</summary>
+        <language>de</language>
+        <description lang="de">Livestreams der 3. Bundesliga</description>
+        <description lang="en">Livestreams of 3. Bundesliga</description>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <source>://github.com/kodinerds/repo/tree/master/addons/plugin.video.bundesliga3</source>
+        <forum>http://www.kodinerds.net/index.php/Thread/47175-Suche-guten-Browser-f%C3%BCr-die-fire-Box/</forum>
+        <email>andreas at vogler dot name</email>
+        <website>http://www.liga3-online.de/live-spiele/</website>
+    </extension>
+
+</addon>

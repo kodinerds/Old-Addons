@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="plugin.video.amvnews" version="1.3.4" name="AMV News" provider-name="Jin">
+  <requires>
+   <import addon="xbmc.python" version="2.1.0"/>
+   <import addon="script.module.requests" version="2.3.0"/>
+  </requires>
+  <extension 
+    point="xbmc.python.pluginsource"
+    library="default.py">
+   <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>AMVNews.ru</summary>
+    <description>Anime Music Videos</description>
+    <platform>all</platform>
+  </extension>
+</addon>

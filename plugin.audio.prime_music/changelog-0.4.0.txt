@@ -1,0 +1,28 @@
+0.4.0
+- added customized playlist support
+0.3.2
+- fixed the check for login fix
+0.3.1
+- check for login fixed
+0.3.0
+- Login fix 2
+- adapted amazons new m3u8 data transfer
+- added one captcha detection message
+- added "back to main menu"
+- added/changed song thumbnail 
+0.2.4
+- Login fix as amazon changed their login site
+0.2.3
+- auto relogin on coockie timeout
+- changed default icon, using prime music icon now
+0.2.2
+- Made the dvd-player enforcement configurable
+- New background fanart (thx nexusle@kodinerds)
+0.2.1
+- Choosing the dvdplayer now explicitly via python code, no further editing of config file needed for stutter-free playback
+0.2.0
+- Implemented audio quality selection, now selection between 48kb, 128kb and 256kb available
+0.1.2
+- Bugfix: Fixed title-listing when album containes non-prime titles, too
+0.1.1
+- Initial release

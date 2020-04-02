@@ -1,0 +1,55 @@
+# Kodi Media Center language file
+# Addon Name: The Big Pictures Screensaver
+# Addon id: script.screensaver.bigpictures
+# Addon Provider: Tristan Fischer (sphere@dersphere.de)
+msgid ""
+msgstr ""
+"Project-Id-Version: XBMC Addons\n"
+"Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Kodi Translation Team\n"
+"Language-Team: German (http://www.transifex.com/projects/p/xbmc-addons/language/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#Settings
+
+msgctxt "#32110"
+msgid "Dim"
+msgstr "Verdunkeln"
+
+msgctxt "#32111"
+msgid "Scrollspeed"
+msgstr "Geschwindigkeit"
+
+msgctxt "#32112"
+msgid "Refresh interval (Seconds)"
+msgstr "Intervall zur Aktualisierung (Sekunden)"
+
+msgctxt "#32113"
+msgid "Image source"
+msgstr "Bilder Quelle"
+
+msgctxt "#32115"
+msgid "Movies / TV Shows"
+msgstr "Filme / TV Serien"
+
+msgctxt "#32116"
+msgid "Image folder"
+msgstr "Eigene Bilder"
+
+msgctxt "#32117"
+msgid "- Path"
+msgstr "- Pfad"
+
+msgctxt "#32118"
+msgid "- Dim timer (Minutes)"
+msgstr "- Abdunkeln nach (Minuten)"
+
+msgctxt "#32119"
+msgid "- Dim level (Percent)"
+msgstr "- Abdunklungsstärke (Prozent)"

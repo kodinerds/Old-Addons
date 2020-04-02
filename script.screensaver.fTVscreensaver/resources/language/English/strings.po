@@ -1,0 +1,55 @@
+# Kodi Media Center language file
+# Addon Name: The Big Pictures Screensaver
+# Addon id: script.screensaver.bigpictures
+# Addon Provider: Tristan Fischer (sphere@dersphere.de)
+msgid ""
+msgstr ""
+"Project-Id-Version: XBMC Addons\n"
+"Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Kodi Translation Team\n"
+"Language-Team: English (http://www.transifex.com/projects/p/xbmc-addons/language/en/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#Settings
+
+msgctxt "#32110"
+msgid "Dim"
+msgstr ""
+
+msgctxt "#32111"
+msgid "Scrollspeed"
+msgstr ""
+
+msgctxt "#32112"
+msgid "Refresh interval (Seconds)"
+msgstr ""
+
+msgctxt "#32113"
+msgid "Image source"
+msgstr ""
+
+msgctxt "#32115"
+msgid "Movies / TV Shows"
+msgstr ""
+
+msgctxt "#32116"
+msgid "Image folder"
+msgstr ""
+
+msgctxt "#32117"
+msgid "- Path"
+msgstr ""
+
+msgctxt "#32118"
+msgid "- Dim timer (Minutes)"
+msgstr ""
+
+msgctxt "#32119"
+msgid "- Dim level (Percent)"
+msgstr ""

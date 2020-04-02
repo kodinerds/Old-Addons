@@ -1,0 +1,85 @@
+0.10.6
+- merged pull sharpherds pull request that fixes the pasing error of amazons changed website, many thx to sharpherd
+0.10.5
+- several login fixes according amazons new login page
+- avoid error when user cancels the password dialog
+- reenable playback of purchased tracks, for all these three fixes many thx to sharpherd for his great work
+0.10.4
+- login code refactoring
+- handle login verification via mail
+- for unlimited account use according search, thanks again to sharpherd for all these changes
+0.10.3
+- finally fixed login problems, many thanks to sharpherd for finding the bug and the solution
+0.10.2
+- Fixed login problems as amazon changed its login page.
+- marking tracks that are available only via music subscription in golden letters
+0.10.1
+- Fixed missing Container.Content values + wrong DefaultView settings, thx to sualfred
+0.10.0
+- added my-artist section
+- changed naming convention for the my albom track index
+0.9.0
+- added followed playlist section, added recently played section, thx to mkoenig2203 for contribution
+- changed album cache identifyer, using album object id when no asin available
+0.8.1
+- fixed bug resulting in missing cache cover folder on initial installation
+0.8.0
+- added amazon music my-albums section, thx to mkoenig2203 for contribution
+- added credential storing
+- fixed thumbnail caching for my-playlist view
+0.7.1
+- added further playback item info to provide osmosis plugin, thx @ gismo112
+- clean up
+0.7.0
+- added forced view type option, thx to sualfred
+0.6.0
+- own playlists now also list music unlimited songs
+- clean up
+0.5.3
+- fixed bug that tries to parse incomplete list element from amazon prime album list
+0.5.2
+- fixed settings issue introduced with kodi leia dev build and typo in intermediate addon version 0.5.1.1
+0.5.1
+- finally solved the stuttering problem (many thanks to zeripath for finding a solution)
+0.5.0
+- fixed bug resulting in empty album song list for music unlimited users
+- playback of uploaded and purchased (amazon auto rip) songs in own playlists now possible
+0.4.8
+- added multifactor authentification
+- ssl certificate verification can now be disabled via plugin settings
+0.4.7
+- changing default value for the "force DVD player" setting to false as kodi 17 does not provide player enforcing by plugin
+0.4.5
+- fixed encoding problems when title/album/artist-names contains non latin1 letters
+- added property that provides current-playlist and playing playlist name
+0.4.4
+- fixed artist name display when playing song from album view
+- added artist name in the amazon playlist listing
+0.4.0
+- added customized playlist support
+0.3.2
+- fixed the check for login fix
+0.3.1
+- check for login fixed
+0.3.0
+- Login fix 2
+- adapted amazons new m3u8 data transfer
+- added one captcha detection message
+- added "back to main menu"
+- added/changed song thumbnail 
+0.2.4
+- Login fix as amazon changed their login site
+0.2.3
+- auto relogin on coockie timeout
+- changed default icon, using prime music icon now
+0.2.2
+- Made the dvd-player enforcement configurable
+- New background fanart (thx nexusle@kodinerds)
+0.2.1
+- Choosing the dvdplayer now explicitly via python code, no further editing of config file needed for stutter-free playback
+0.2.0
+- Implemented audio quality selection, now selection between 48kb, 128kb and 256kb available
+0.1.2
+- Bugfix: Fixed title-listing when album containes non-prime titles, too
+0.1.1
+- Initial release

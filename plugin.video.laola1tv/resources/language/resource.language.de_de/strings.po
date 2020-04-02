@@ -1,0 +1,97 @@
+# Kodi Media Center language file
+# Addon Name: Laola1 TV
+# Addon id: plugin.video.laola1tv
+# Addon Provider: Jin
+
+msgid ""
+msgstr ""
+
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de_DE\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgctxt "#30000"
+msgid "General"
+msgstr "Allgemein"
+
+msgctxt "#30001"
+msgid "Save credentials"
+msgstr "Anmeldeinformationen speichern"
+
+msgctxt "#30002"
+msgid "Laola1 Login: Email"
+msgstr "Laola1 Login: E-Mail"
+
+msgctxt "#30003"
+msgid "Laola1 Login: Password"
+msgstr "Laola1 Login: Passwort"
+
+msgctxt "#30005"
+msgid "Language"
+msgstr "Sprache"
+
+msgctxt "#30006"
+msgid "Portal"
+msgstr "Portal"
+
+msgctxt "#30010"
+msgid "View"
+msgstr "Ansicht"
+
+msgctxt "#30011"
+msgid "Override View"
+msgstr "Ansicht überschreiben"
+
+msgctxt "#30012"
+msgid "View: Content"
+msgstr "Ansicht: Inhalt"
+
+msgctxt "#30013"
+msgid "View: ID"
+msgstr "Ansicht: ID"
+
+msgctxt "#30020"
+msgid "Video Quality"
+msgstr "Video Qualität"
+
+msgctxt "#30021"
+msgid "Low"
+msgstr "Niedrig"
+
+msgctxt "#30022"
+msgid "Medium"
+msgstr "Mittel"
+
+msgctxt "#30023"
+msgid "Regular"
+msgstr "Regulär"
+
+msgctxt "#30024"
+msgid "High"
+msgstr "Hoch"
+
+msgctxt "#30025"
+msgid "Very High"
+msgstr "Sehr Hoch"
+
+msgctxt "#30030"
+msgid "German"
+msgstr "Deutsch"
+
+msgctxt "#30031"
+msgid "English"
+msgstr "Englisch"
+
+msgctxt "#30032"
+msgid "Russian"
+msgstr "Russisch"
+
+msgctxt "#30051"
+msgid "Failed to get Device ID. Please Retry."
+msgstr "Fehler beim Abrufen der Geräte-ID. Bitte erneut versuchen."
+
+msgctxt "#30101"
+msgid "Live"
+msgstr ""

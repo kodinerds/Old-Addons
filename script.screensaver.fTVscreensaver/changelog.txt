@@ -1,0 +1,23 @@
+0.1.2
+ - fixed case sensitive bug for openelec
+
+0.1.1 reworked screensaver
+ - cleanup
+ - added DIM options
+
+0.1.0 reworked screensaver
+ - removed playlist method and replaced it with JSON method
+ - added option to set the refresh interval
+ - added optoion to choose between video library or custom image folder as image source
+
+0.0.3
+ - fixed scrollspeed direction
+ 
+0.0.2
+ - added DIM option
+ - added scrollspeed option
+ - added custom playlist option
+ - added localisation
+
+0.0.1
+ - initial version

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="service.subtitles.subcentral" name="subcentral" version="0.8.12" provider-name="L0RE">
+  <requires>
+    <import addon="xbmc.python" version="2.19.0"/>
+    <import addon="script.module.requests" version="2.12.4"/>
+    <import addon="script.module.beautifulsoup4" version="4.3.2"/>
+    <import addon="vfs.rar" version="2.0.2" />
+  </requires>
+  <extension point="xbmc.subtitle.module"
+             library="service.py" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Subcentral</summary>
+    <description lang="en">German Subtitles from subcentral Webpage for TV Series</description>
+    <description lang="de">Untertitel aus dem Forum Subcentral für TV Serien</description>
+    <disclaimer lang="en"></disclaimer>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum>www.kodinerds.net/index.php/Thread/24416-RELEASE-SubCentral-de-Hochwertige-Untertitel-für-TV-Serien</forum>
+    <website>https://www.subcentral.de/</website>
+    <email>andreas at vogler dot name</email>
+    <source>https://github.com/kodinerds/repo/tree/master/service.subtitles.subcentral</source>
+  </extension>
+</addon>

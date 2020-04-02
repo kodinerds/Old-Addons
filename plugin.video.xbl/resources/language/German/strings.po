@@ -1,0 +1,68 @@
+# Kodi Media Center language file
+# Addon Name: Version Check
+# Addon id: service.xbmc.versioncheck
+# Addon Provider: XBMC Foundation
+msgid ""
+msgstr ""
+"Project-Id-Version: XBMC Addons\n"
+"Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Kodi Translation Team\n"
+"Language-Team: English (http://www.transifex.com/projects/p/xbmc-addons/language/en/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+
+msgctxt "#30005"
+msgid "Aufnahmen"
+msgstr "Recordings"
+
+msgctxt "#30006"
+msgid "Screenshots"
+msgstr "Screenshots"
+
+msgctxt "#30007"
+msgid "Freunde"
+msgstr "Friends"
+
+msgctxt "#30020"
+msgid " ist "
+msgstr " is "
+
+#msgctxt "#30021"
+#msgid "Spielt grade: "
+#msgstr "Is playing: "
+
+msgctxt "#30022"
+msgid "Zuletzt gesehen: "
+msgstr "Last seen: "
+
+msgctxt "#30023"
+msgid "Gamerscore: "
+msgstr "Gamerscore: "
+
+#settings
+
+msgctxt "#30100"
+msgid "Allgemein"
+msgstr "General"
+
+msgctxt "#30110"
+msgid "API-Key"
+msgstr "API-Key"
+
+msgctxt "#30115"
+msgid "Zeige Freunde Fanart"
+msgstr "Show friends fanart"
+
+msgctxt "#30116"
+msgid "Zeige Freunde Thumb"
+msgstr "Show friends thumb"
+
+msgctxt "#30121"
+msgid "Lade hi-res Screenshot Fanart"
+msgstr "Get hi-res screenshot fanart"

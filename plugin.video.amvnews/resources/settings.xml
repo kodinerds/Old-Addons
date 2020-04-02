@@ -1,0 +1,7 @@
+<settings>
+	<category label="Settings">
+	   <setting id="method" type ="labelenum" label="1" values="Preview|DDL|Torrent"/>
+	   <setting id="info" type ="bool" label="2" default="false"/>
+	   <setting id="amvfolder" type ="folder" label="3"/>
+	</category>
+</settings>
